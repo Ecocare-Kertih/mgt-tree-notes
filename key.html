@@ -1,0 +1,1672 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ecoCare Mangrove Trail: Key to the 20 Plants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500;0,700;1,500&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+:root {
+  --bg: #eef2ef;
+  --surface: #fbfcfb;
+  --fg: #1b2521;
+  --muted: #56645e;
+  --line: #d3dcd7;
+  --accent: #1d6a55;
+  --accent-soft: #dcebe4;
+  --kids: #dfe8cd;
+  --kids-ink: #3f5a1f;
+  --note: #e7ecf2;
+  --warn: #9b3b1f;
+  --true-bg: #ecf5ef; --true-line: #bcd8c6; --true-ink: #1d6a55;
+  --assoc-bg: #f8f2e3; --assoc-line: #e2cf9f; --assoc-ink: #7a5a12;
+  --intro-bg: #fbdcd9; --intro-line: #e0625a; --intro-ink: #b3261e;
+  --font-display: "Petrona", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111715; --surface: #18201d; --fg: #e2eae6; --muted: #9aaaa3; --line: #2b3632;
+    --accent: #72c6a8; --accent-soft: #1f312a; --kids: #26331e; --kids-ink: #b9d494;
+    --note: #1c232c; --warn: #f0a084; color-scheme: dark;
+    --true-bg: #15241d; --true-line: #2d4b3d; --true-ink: #7fd0b2;
+    --assoc-bg: #262116; --assoc-line: #4d4126; --assoc-ink: #e3c47c;
+    --intro-bg: #3a1618; --intro-line: #a63a3d; --intro-ink: #ff9a92;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111715; --surface: #18201d; --fg: #e2eae6; --muted: #9aaaa3; --line: #2b3632;
+  --accent: #72c6a8; --accent-soft: #1f312a; --kids: #26331e; --kids-ink: #b9d494;
+  --note: #1c232c; --warn: #f0a084; color-scheme: dark;
+  --true-bg: #15241d; --true-line: #2d4b3d; --true-ink: #7fd0b2;
+  --assoc-bg: #262116; --assoc-line: #4d4126; --assoc-ink: #e3c47c;
+  --intro-bg: #3a1618; --intro-line: #a63a3d; --intro-ink: #ff9a92;
+}
+:root[lang="ja"] { --font-display: "Petrona", "Noto Serif JP", "Hiragino Mincho ProN", Georgia, serif;
+  --font-body: "Atkinson Hyperlegible", "Noto Sans JP", "Hiragino Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+:root[data-mgt-pending] #key-root { visibility: hidden; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 1.25rem 16px 6rem; display: grid; gap: 1.75rem; }
+.wrap > *, .couplet > *, .choice > * { min-width: 0; }
+.wrap { overflow-wrap: break-word; }
+.fold-body li a, .block li a { overflow-wrap: anywhere; }
+a { color: var(--accent); }
+.back-link { justify-self: start; font-weight: 700; text-decoration: none; padding: .35rem 0; }
+.back-link:hover { text-decoration: underline; }
+.masthead { display: grid; gap: .5rem; }
+.kicker { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+.wrap[lang="ja"] .kicker { letter-spacing: .04em; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.15; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-size: 1.45rem; line-height: 1.25; margin: 0 0 .75rem; }
+h3 { font-size: 1rem; margin: 1.25rem 0 .5rem; color: var(--accent); }
+.intro p, .block p { margin: 0 0 .75rem; }
+.intro ul, .block ul, .block ol, .fold-body ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
+.intro li, .block li, .fold-body li { margin: .25rem 0; }
+blockquote { margin: 0 0 .75rem; padding: .75rem .9rem; border-radius: .5rem; background: var(--intro-bg); border-left: 4px solid var(--intro-line); }
+blockquote p { margin: 0 0 .35rem; }
+blockquote ul { margin: 0; padding-left: 1.1rem; }
+hr { display: none; }
+.block, .fold { background: var(--surface); border: 1px solid var(--line); border-radius: .75rem; padding: 1.1rem 1rem; }
+#the-key { background: transparent; border: 0; padding: 0; }
+.couplet { position: relative; display: grid; gap: .6rem; background: var(--surface); border: 1px solid var(--line);
+  border-radius: .75rem; padding: .9rem .9rem .9rem 3rem; margin-bottom: .9rem; scroll-margin-top: 1rem; }
+.couplet:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.cnum { position: absolute; left: .7rem; top: .85rem; width: 1.8rem; height: 1.8rem; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent); color: var(--surface); font-weight: 700; font-size: .85rem; font-variant-numeric: tabular-nums; }
+.choice { display: grid; grid-template-columns: 2.1rem 1fr; gap: .5rem; align-items: start; }
+.choice + .choice { border-top: 1px dashed var(--line); padding-top: .6rem; }
+.tag { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: .05rem; }
+.ctext p { margin: 0 0 .35rem; }
+.ctext p.arrow { margin: 0; font-weight: 700; }
+.goto { display: inline-block; padding: .2rem .7rem; border-radius: 999px; background: var(--accent-soft); text-decoration: none; font-weight: 700; }
+.goto:hover { text-decoration: underline; }
+.result { text-decoration: none; }
+.result strong { text-decoration: underline; text-underline-offset: .15em; }
+.cnote { margin: 0; font-size: .92rem; color: var(--muted); }
+.fold { padding: 0; }
+.fold > summary { list-style: none; cursor: pointer; padding: 1rem; display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
+.fold > summary::-webkit-details-marker { display: none; }
+.fold > summary h2 { margin: 0; }
+.fold > summary h2::before { content: "\25B8\00a0"; color: var(--accent); }
+.fold[open] > summary h2::before { content: "\25BE\00a0"; }
+.hint { font-size: .85rem; color: var(--muted); }
+.hint::after { content: attr(data-open); }
+.fold[open] .hint::after { content: attr(data-close); }
+.fold > summary:focus-visible, .goto:focus-visible, .result:focus-visible, .back-link:focus-visible, .key-fab:focus-visible, .lang-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.fold-body { padding: 0 1rem 1rem; }
+.tscroll { overflow-x: auto; margin: 0 0 1rem; border: 1px solid var(--line); border-radius: .5rem; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; line-height: 1.45; }
+th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+th { background: var(--accent-soft); font-weight: 700; }
+#character-matrix table { min-width: 40rem; }
+#glossary table { min-width: 30rem; }
+#check-your-answer table { min-width: 34rem; }
+tr:last-child td { border-bottom: 0; }
+.key-fab, .lang-toggle { position: fixed; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 10; display: inline-flex; align-items: center; gap: .4rem;
+  border: 0; border-radius: 999px; padding: .65rem 1rem; font: 700 .9rem var(--font-body); cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+.key-fab { right: calc(16px + env(safe-area-inset-right, 0px)); background: var(--accent); color: var(--surface); }
+.lang-toggle { left: calc(16px + env(safe-area-inset-left, 0px)); background: var(--surface); color: var(--accent); box-shadow: 0 2px 8px rgba(0,0,0,.2), inset 0 0 0 1.5px var(--accent); padding-left: .8rem; }
+.lang-toggle svg { width: 1.05rem; height: 1.05rem; flex: none; }
+@media (hover: hover) { .lang-toggle:hover { background: var(--accent-soft); } }
+</style>
+<script>(function () { var h = location.hash, ja = h === '#ja'; try { ja = ja || (h !== '#en' && localStorage.getItem("mgt-lang") === 'ja'); } catch (e) {} if (ja) document.documentElement.setAttribute('data-mgt-pending', ''); })();</script>
+</head>
+<body>
+<div id="key-root">
+<div class="wrap" lang="en">
+<a class="back-link" href="index.html#en">← Tree notes</a>
+<header class="masthead"><p class="kicker">ecoCare Kerteh · Mangrove Guided Tour</p><h1>ecoCare Mangrove Trail: Key to the 20 Plants</h1><div class="intro"><p>A guide for identifying the 18 trail plants and the 2 "Around ecoCare" trees <strong>without flowers</strong>, using growth form, roots, bark, leaves and propagules. Two pairs of look-alikes (the two bakau, and Berus and Tumu Merah) are told apart by their propagules. Scientific terms are given in <strong>bold</strong>, with a plain explanation in brackets the first time they appear. All terms are also in the <a href="#glossary">Glossary</a>. Every fact has a source in brackets, listed in full at the end.</p>
+<p>The guide has two tools:</p>
+<ul>
+<li><strong><a href="#the-key">The key</a>:</strong> answer a series of "a or b?" questions until you reach a name. Best for beginners and kids.</li>
+<li><strong><a href="#character-matrix">The character matrix</a>:</strong> two tables listing the features of all 20 plants. Start from whatever you can see, and rule out plants that don't match. Best when a feature in the key is hard to see.</li>
+</ul>
+<p><strong>Status:</strong> draft, not yet tested on the trail (checked against sources 29 Oct 2026).</p>
+</div></header>
+<section class="block" id="how-to-use"><h2>How to use the key</h2><ol>
+<li>Start at couplet <strong>1</strong>. Each couplet has two choices, <strong>a</strong> and <strong>b</strong>.</li>
+<li>Read <strong>both</strong> choices before deciding. Pick the one that fits your plant better, then follow the arrow to the next couplet or to a name.</li>
+<li>Most choices list two or three features. The first one is the most reliable. If it is hard to see, use the others.</li>
+<li>Look at <strong>several leaves</strong>, not just one. Shade, damage and age can change leaf size and shape.</li>
+<li>Use <strong>grown trees</strong>. Young saplings may not have their special roots yet (Nyireh Bunga's buttresses, for example, are usually not seen on young trees (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>)).</li>
+<li>When you reach a name, go to <a href="#check-your-answer">Check your answer</a> and confirm it with a second feature, such as the fruit or propagule.</li>
+</ol>
+<p><strong>Handy size guide:</strong> a new pencil is about 18 cm long, and an adult's palm is about 8 cm wide.</p>
+<p><strong>Leaf or leaflet?</strong> Look where it joins the twig. A whole leaf has a small <strong>bud</strong> (a tiny shoot) in the angle above its stalk. A <strong>leaflet</strong> (one part of a divided leaf) never has a bud at its base.</p>
+<blockquote>
+<p><strong>Safety first</strong></p>
+<ul>
+<li><strong>Buta-buta:</strong> never break its leaves or twigs. The milky sap irritates skin, and in the eyes it can cause painful inflammation and, in severe cases, blindness (<a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html">Atlas of Poisonous Plants in Hong Kong</a>).</li>
+<li><strong>Pandan laut:</strong> the leaf edges have sharp spines. Don't run your hand along a leaf.</li>
+<li>Don't step on breathing roots, and don't pull propagules off the trees.</li>
+<li><strong>Nyireh bunga:</strong> don't stand under a tree with ripe fruit. The woody fruits are the size of a grapefruit or small pomelo (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>).</li>
+<li><strong>Ketapang:</strong> biting ants can live in its hollow twigs, so don't break them.</li>
+</ul>
+</blockquote></section>
+<section class="block" id="the-key"><h2>The key</h2><section class="couplet" id="c1" aria-label="Couplet 1"><span class="cnum" aria-hidden="true">1</span><div class="choice"><span class="tag">1a</span><div class="ctext"><p>A <strong>woody climber</strong> (a vine with a woody stem) with <strong>pinnate</strong> leaves (one leaf made of several leaflets along a central stalk): 3 to 7 leathery leaflets, ending in a single leaflet that is slightly bigger than the others. Leaves <strong>alternate</strong>. It grows 15 m long or more, twining over other plants or creeping on the ground (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#tuba-laut" data-tree="tuba-laut" title="Open this tree in the tree notes"><strong>Tuba Laut</strong></a> (<em>Derris trifoliata</em>)</p></div></div><div class="choice"><span class="tag">1b</span><div class="ctext"><p><strong>Not</strong> a woody climber with pinnate leaves.</p><p class="arrow">→ <a class="goto" href="#c2">go to 2</a></p></div></div></section>
+<section class="couplet" id="c2" aria-label="Couplet 2"><span class="cnum" aria-hidden="true">2</span><div class="choice"><span class="tag">2a</span><div class="ctext"><p><strong>Palm-like</strong> plant. Leaves very long (more than 60 cm), strap-shaped or feather-shaped, with <strong>parallel veins</strong> (veins running side by side from base to tip, like in grass).</p><p class="arrow">→ <a class="goto" href="#c3">go to 3</a></p></div></div><div class="choice"><span class="tag">2b</span><div class="ctext"><p><strong>Not</strong> palm-like. Leaves (or leaf-like parts) less than 40 cm long. The largest, Ketapang's, reach about 38 cm (<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>).</p><p class="arrow">→ <a class="goto" href="#c4">go to 4</a></p></div></div></section>
+<section class="couplet" id="c3" aria-label="Couplet 3"><span class="cnum" aria-hidden="true">3</span><div class="choice"><span class="tag">3a</span><div class="ctext"><p><strong>No upright trunk.</strong> The stem creeps underground as a <strong>rhizome</strong>. Huge <strong>feather-shaped fronds</strong>, 4 to 10 m long, rise straight out of the mud, each with up to 100 long leaflets on each side (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#nipah" data-tree="nipah" title="Open this tree in the tree notes"><strong>Nipah</strong></a> (<em>Nypa fruticans</em>)</p></div></div><div class="choice"><span class="tag">3b</span><div class="ctext"><p>A <strong>branching trunk</strong>, up to 14 m tall, with <strong>prop and stilt roots</strong> (roots that grow out of the lower trunk and branches and down into the ground). Leaves <strong>strap-shaped</strong> (long and narrow, like a belt), 80 to 180 cm long and 4 to 8 cm wide, in a <strong>spiral</strong> at the branch tips, with <strong>spines</strong> along the edges and the underside of the midrib (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#pandan-laut" data-tree="pandan-laut" title="Open this tree in the tree notes"><strong>Pandan Laut</strong></a> (<em>Pandanus tectorius</em>)</p></div></div></section>
+<section class="couplet" id="c4" aria-label="Couplet 4"><span class="cnum" aria-hidden="true">4</span><div class="choice"><span class="tag">4a</span><div class="ctext"><p>Leaves <strong>pinnate</strong>, with leaflets 3.5 to 12 cm long with <strong>rounded tips</strong>. Bark smooth and flaky, light brown, yellowish or greenish, or grey with light brown to orange patches. Mature trees have long <strong>buttresses</strong> that snake along the ground (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#nyireh-bunga" data-tree="nyireh-bunga" title="Open this tree in the tree notes"><strong>Nyireh Bunga</strong></a> (<em>Xylocarpus granatum</em>)</p></div></div><div class="choice"><span class="tag">4b</span><div class="ctext"><p>Leaves <strong>simple</strong> (one undivided blade on each leaf stalk, with a bud at its base).</p><p class="arrow">→ <a class="goto" href="#c5">go to 5</a></p></div></div></section>
+<section class="couplet" id="c5" aria-label="Couplet 5"><span class="cnum" aria-hidden="true">5</span><div class="choice"><span class="tag">5a</span><div class="ctext"><p><strong>Phyllodes</strong> (what look like leaves are really flattened leaf stalks): narrow and <strong>falcate</strong> (curved like a sickle), 10 to 20 cm long and 1.2 to 3 cm wide, with <strong>3 lengthwise nerves</strong> running side by side (<a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>).</p><p class="arrow">→ <a class="result" href="index.html#akasia" data-tree="akasia" title="Open this tree in the tree notes"><strong>Akasia</strong></a> (<em>Acacia auriculiformis</em>)</p></div></div><div class="choice"><span class="tag">5b</span><div class="ctext"><p>True leaves with a <strong>midrib</strong> (a main central vein) and side veins branching off it.</p><p class="arrow">→ <a class="goto" href="#c6">go to 6</a></p></div></div></section>
+<section class="couplet" id="c6" aria-label="Couplet 6"><span class="cnum" aria-hidden="true">6</span><div class="choice"><span class="tag">6a</span><div class="ctext"><p>Leaves <strong>opposite</strong> (in pairs: two leaves at the same point on the twig, facing each other). In the mangrove family Rhizophoraceae the pairs are <strong>decussate</strong> (each pair at right angles to the pair below) (<a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>).</p><p class="arrow">→ <a class="goto" href="#c7">go to 7</a></p></div></div><div class="choice"><span class="tag">6b</span><div class="ctext"><p>Leaves <strong>alternate</strong> (one leaf at each point, taking turns up the twig; in some, in a spiral).</p><p class="arrow">→ <a class="goto" href="#c16">go to 16</a></p></div></div></section>
+<section class="couplet" id="c7" aria-label="Couplet 7"><span class="cnum" aria-hidden="true">7</span><div class="choice"><span class="tag">7a</span><div class="ctext"><p><strong>Not a tree</strong>: an upright bush up to about 3 m tall, or a climber up to 13 m long. Leaves thin, 3.8 to 8.8 cm long (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>), with tiny glands dotted on the underside (<a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm">CSIRO</a>).</p><p class="arrow">→ <a class="result" href="index.html#gambir-laut" data-tree="gambir-laut" title="Open this tree in the tree notes"><strong>Gambir Laut</strong></a> (<em>Clerodendrum inerme</em>, syn. <em>Volkameria inermis</em>)</p></div></div><div class="choice"><span class="tag">7b</span><div class="ctext"><p><strong>A tree.</strong></p><p class="arrow">→ <a class="goto" href="#c8">go to 8</a></p></div></div></section>
+<section class="couplet" id="c8" aria-label="Couplet 8"><span class="cnum" aria-hidden="true">8</span><div class="choice"><span class="tag">8a</span><div class="ctext"><p>No ring scars on the twigs. <strong>Pneumatophores</strong> (breathing roots that grow straight up out of the mud around the tree) (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>).</p><p class="arrow">→ <a class="goto" href="#c9">go to 9</a></p></div></div><div class="choice"><span class="tag">8b</span><div class="ctext"><p><strong>Ring scars</strong> around the twigs at each pair of leaves. They are left by <strong>interpetiolar stipules</strong> (a pointed sheath between the two leaf stalks that wraps the shoot tip and falls off early) (<a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>). This is the mangrove family <strong>Rhizophoraceae</strong>. The trees have stilt roots, knee roots, or no special roots.</p><p class="arrow">→ <a class="goto" href="#c11">go to 11</a></p></div></div></section>
+<section class="couplet" id="c9" aria-label="Couplet 9"><span class="cnum" aria-hidden="true">9</span><div class="choice"><span class="tag">9a</span><div class="ctext"><p>Pneumatophores <strong>thick, blunt and cone-shaped</strong>, up to 1 m tall. Leaves 5 to 11 cm long and 4 to 8 cm wide, with a <strong>rounded or broad tip</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#perepat" data-tree="perepat" title="Open this tree in the tree notes"><strong>Perepat</strong></a> (<em>Sonneratia alba</em>)</p></div></div><div class="choice"><span class="tag">9b</span><div class="ctext"><p>Pneumatophores <strong>thin like pencils</strong> (<em>akar pensel</em>), 15 to 20 cm tall in Api-api Putih (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>). Api-api Putih's leaves have <strong>salt glands</strong> that push out salt (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>).</p><p class="arrow">→ <a class="goto" href="#c10">go to 10</a></p></div></div></section>
+<section class="couplet" id="c10" aria-label="Couplet 10"><span class="cnum" aria-hidden="true">10</span><div class="choice"><span class="tag">10a</span><div class="ctext"><p>Leaves <strong>narrow and pointed</strong>: oblong to <strong>lanceolate</strong> (narrow and tapering), up to 15 cm long and 5 cm wide. Underside <strong>whitish</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#api-api-putih" data-tree="api-api-putih" title="Open this tree in the tree notes"><strong>Api-api Putih</strong></a> (<em>Avicennia alba</em>)</p></div></div><div class="choice"><span class="tag">10b</span><div class="ctext"><p>Leaves <strong>broad</strong>: <strong>ovate</strong> (egg-shaped) or <strong>elliptic</strong> (oval), up to 10 cm long and 6 cm wide, thick. Underside covered in <strong>dense, powdery hairs</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#api-api-bulu" data-tree="api-api-bulu" title="Open this tree in the tree notes"><strong>Api-api Bulu</strong></a> (<em>Avicennia rumphiana</em>)</p></div></div></section>
+<section class="couplet" id="c11" aria-label="Couplet 11"><span class="cnum" aria-hidden="true">11</span><div class="choice"><span class="tag">11a</span><div class="ctext"><p><strong>Stilt roots</strong> (<em>akar jangkang</em>: arching roots that grow out of the trunk and down into the mud, like spider legs).</p><p class="arrow">→ <a class="goto" href="#c12">go to 12</a></p></div></div><div class="choice"><span class="tag">11b</span><div class="ctext"><p>No stilt roots.</p><p class="arrow">→ <a class="goto" href="#c14">go to 14</a></p></div></div></section>
+<section class="couplet" id="c12" aria-label="Couplet 12"><span class="cnum" aria-hidden="true">12</span><div class="choice"><span class="tag">12a</span><div class="ctext"><p>Stilt roots <strong>small</strong>, only at the base of the trunk. Leaf tip <strong>blunt</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#tengar-merah" data-tree="tengar-merah" title="Open this tree in the tree notes"><strong>Tengar Merah</strong></a> (<em>Ceriops zippeliana</em>)</p></div></div><div class="choice"><span class="tag">12b</span><div class="ctext"><p>Stilt roots <strong>large and arching</strong>, in Bakau Minyak reaching up to 5 m up the stem (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3265">NParks</a>). Leaf tip pointed, ending in a <strong>short stiff point</strong> (a <strong>mucro</strong>) (<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>).</p><p class="arrow">→ <a class="goto" href="#c13">go to 13</a></p></div></div></section>
+<section class="couplet" id="c13" aria-label="Couplet 13"><span class="cnum" aria-hidden="true">13</span><div class="choice"><span class="tag">13a</span><div class="ctext"><p>On propagules still hanging on the tree, the <strong>collar</strong> (the short tube at the top, where the propagule comes out of the fruit) is <strong>pale greenish</strong>: pale green or greenish yellow (<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>).</p><p class="arrow">→ <a class="result" href="index.html#bakau-kurap" data-tree="bakau-kurap" title="Open this tree in the tree notes"><strong>Bakau Kurap</strong></a> (<em>Rhizophora mucronata</em>)</p></div></div><div class="choice"><span class="tag">13b</span><div class="ctext"><p>On propagules still hanging on the tree, the collar is <strong>reddish</strong>: red, dark greenish red or reddish dark green (<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>).</p><p class="arrow">→ <a class="result" href="index.html#bakau-minyak" data-tree="bakau-minyak" title="Open this tree in the tree notes"><strong>Bakau Minyak</strong></a> (<em>Rhizophora apiculata</em>)</p></div></div><p class="cnote"><em>No propagules on the tree? Come back in another season.</em></p></section>
+<section class="couplet" id="c14" aria-label="Couplet 14"><span class="cnum" aria-hidden="true">14</span><div class="choice"><span class="tag">14a</span><div class="ctext"><p><strong>Knee roots</strong> (<em>akar lutut</em>: roots that loop up out of the mud and back down, like bent knees) (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>).</p><p class="arrow">→ <a class="goto" href="#c15">go to 15</a></p></div></div><div class="choice"><span class="tag">14b</span><div class="ctext"><p><strong>No knee roots.</strong> Leaf edges curled inward. Trunk base thickened, and the roots sometimes look braided (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#bakau-lilin" data-tree="bakau-lilin" title="Open this tree in the tree notes"><strong>Bakau Lilin</strong></a> (<em>Kandelia candel</em>)</p></div></div></section>
+<section class="couplet" id="c15" aria-label="Couplet 15"><span class="cnum" aria-hidden="true">15</span><div class="choice"><span class="tag">15a</span><div class="ctext"><p>Propagules <strong>thin</strong>, 8 to 15 cm long and 0.8 cm wide (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#berus" data-tree="berus" title="Open this tree in the tree notes"><strong>Berus</strong></a> (<em>Bruguiera cylindrica</em>)</p></div></div><div class="choice"><span class="tag">15b</span><div class="ctext"><p>Propagules <strong>fat and cigar-shaped</strong>, 19 to 25 cm long and 1 to 1.7 cm wide (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#tumu-merah" data-tree="tumu-merah" title="Open this tree in the tree notes"><strong>Tumu Merah</strong></a> (<em>Bruguiera gymnorhiza</em>)</p></div></div><p class="cnote"><em>No propagules on the tree? Look for fallen ones on the ground underneath.</em></p></section>
+<section class="couplet" id="c16" aria-label="Couplet 16"><span class="cnum" aria-hidden="true">16</span><div class="choice"><span class="tag">16a</span><div class="ctext"><p>Leaves <strong>cordate</strong> (heart-shaped, with a notch where the stalk joins), with a pointed tip and finely toothed edge, <strong>spirally arranged</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>), the blade 5 to 30 cm long. Underside <strong>whitish</strong> and densely covered in <strong>stellate hairs</strong> (tiny star-shaped hairs, visible with a hand lens) (<a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm">Plants of SE NSW</a>).</p><p class="arrow">→ <a class="result" href="index.html#bebaru" data-tree="bebaru" title="Open this tree in the tree notes"><strong>Bebaru</strong></a> (<em>Hibiscus tiliaceus</em>, syn. <em>Talipariti tiliaceum</em>)</p></div></div><div class="choice"><span class="tag">16b</span><div class="ctext"><p>Leaves not heart-shaped.</p><p class="arrow">→ <a class="goto" href="#c17">go to 17</a></p></div></div></section>
+<section class="couplet" id="c17" aria-label="Couplet 17"><span class="cnum" aria-hidden="true">17</span><div class="choice"><span class="tag">17a</span><div class="ctext"><p>Leaf underside <strong>scaly, silvery white to brown</strong>, shining like a mirror. Leaves 6.3 to 30 cm long, <strong>spirally arranged</strong>. <strong>Plank or ribbon buttresses</strong> at the trunk base (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>).</p><p class="arrow">→ <a class="result" href="index.html#dungun-laut" data-tree="dungun-laut" title="Open this tree in the tree notes"><strong>Dungun Laut</strong></a> (<em>Heritiera littoralis</em>)</p></div></div><div class="choice"><span class="tag">17b</span><div class="ctext"><p>Leaf underside <strong>not</strong> silvery-scaly.</p><p class="arrow">→ <a class="goto" href="#c18">go to 18</a></p></div></div></section>
+<section class="couplet" id="c18" aria-label="Couplet 18"><span class="cnum" aria-hidden="true">18</span><div class="choice"><span class="tag">18a</span><div class="ctext"><p>Leaves <strong>large</strong>, usually 15 to 25 cm long (up to 38 cm), <strong>obovate</strong>, shiny, <strong>clustered at the branch tips</strong>. Branches horizontal, in <strong>tiers 1 to 2 m apart</strong>, giving young trees a pagoda shape (<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>).</p><p class="arrow">→ <a class="result" href="index.html#ketapang" data-tree="ketapang" title="Open this tree in the tree notes"><strong>Ketapang</strong></a> (<em>Terminalia catappa</em>)</p></div></div><div class="choice"><span class="tag">18b</span><div class="ctext"><p>Leaves <strong>small</strong>, up to 11 cm long (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>).</p><p class="arrow">→ <a class="goto" href="#c19">go to 19</a></p></div></div></section>
+<section class="couplet" id="c19" aria-label="Couplet 19"><span class="cnum" aria-hidden="true">19</span><div class="choice"><span class="tag">19a</span><div class="ctext"><p>Leaf edge <strong>smooth</strong> (not toothed). Leaves <strong>obovate</strong> (egg-shaped, widest near the tip), 2 to 9 cm long and 1 to 2.5 cm wide, slightly thick and fleshy, with a rounded or <strong>retuse</strong> tip (shallowly notched) (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>), <strong>spirally arranged</strong> in tufts near the twig ends (<a href="https://prosea.prota4u.org/view.aspx?id=5744">PROSEA</a>).</p><p class="arrow">→ <a class="result" href="index.html#teruntum-merah" data-tree="teruntum-merah" title="Open this tree in the tree notes"><strong>Teruntum Merah</strong></a> (<em>Lumnitzera littorea</em>)</p></div></div><div class="choice"><span class="tag">19b</span><div class="ctext"><p>Leaf edge <strong>toothed</strong>: shallow teeth, with 2 to 4 tiny <strong>glands</strong> on each side where the blade meets the leaf stalk. Leaves oval to drop-shaped, 3.7 to 11 cm long, <strong>spirally arranged</strong>. Old leaves turn bright red (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>). <strong>Don't touch or break any part of this tree.</strong></p><p class="arrow">→ <a class="result" href="index.html#buta-buta" data-tree="buta-buta" title="Open this tree in the tree notes"><strong>Buta-buta</strong></a> (<em>Excoecaria agallocha</em>)</p></div></div></section></section>
+<details class="fold" id="character-matrix"><summary><h2>Character matrix</h2><span class="hint" data-open="Tap to open" data-close="Tap to close"></span></summary><div class="fold-body"><p>Use these two tables when you can't answer a couplet in the key, or to double-check a name. Pick a feature you can see clearly, rule out every plant that doesn't match, then move on to the next feature.</p>
+<p><strong>Stop</strong> is the number in the ecoCare pamphlet trail order. "i" and "ii" are the two Around ecoCare trees, which are not pamphlet stops. The sources for each row are listed under <a href="#sources-by-plant">Sources by plant</a>.</p>
+<h3>Table A: Growth form, roots and bark</h3>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Stop</th>
+<th>Growth form</th>
+<th>Roots and trunk base</th>
+<th>Bark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Akasia</td>
+<td>1</td>
+<td>Tree, up to 35 m</td>
+<td></td>
+<td>Fissured, grey to black</td>
+</tr>
+<tr>
+<td>Api-api Bulu</td>
+<td>2</td>
+<td>Tree, up to 30 m</td>
+<td>Pencil pneumatophores</td>
+<td>Dark grey, smooth</td>
+</tr>
+<tr>
+<td>Nyireh Bunga</td>
+<td>3</td>
+<td>Tree, up to 20 m</td>
+<td>Long buttresses snaking along the ground (mature trees)</td>
+<td>Smooth and flaky; light brown, yellowish or greenish, or grey with orange patches</td>
+</tr>
+<tr>
+<td>Teruntum Merah</td>
+<td>4</td>
+<td>Tree, up to 25 m</td>
+<td>Pneumatophores; no buttresses</td>
+<td>Dark brown, fissured</td>
+</tr>
+<tr>
+<td>Gambir Laut</td>
+<td>5</td>
+<td>Shrub up to about 3 m, or climber up to 13 m</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Buta-buta</td>
+<td>6</td>
+<td>Tree, up to 15 m</td>
+<td>Shallow, surface-running roots, often knotted</td>
+<td>Greyish-brown, warty, with vertical fissures and lenticels</td>
+</tr>
+<tr>
+<td>Tuba Laut</td>
+<td>7</td>
+<td>Woody climber, 15 m long or more</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bebaru</td>
+<td>8</td>
+<td>Shrubby tree, up to 15 m</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Api-api Putih</td>
+<td>9</td>
+<td>Tree, up to 20 m</td>
+<td>Pencil pneumatophores, 15 to 20 cm</td>
+<td>Smooth, brownish black</td>
+</tr>
+<tr>
+<td>Bakau Kurap</td>
+<td>10</td>
+<td>Tree, 20 to 25 m</td>
+<td>Stilt roots; aerial roots from lower branches</td>
+<td>Dark, with cracks</td>
+</tr>
+<tr>
+<td>Tengar Merah</td>
+<td>11</td>
+<td>Small tree, up to 10 to 12 m</td>
+<td>Small stilt roots at the trunk base</td>
+<td>Greyish brown, lenticels sticking out, flaky at the base</td>
+</tr>
+<tr>
+<td>Berus</td>
+<td>12</td>
+<td>Tree, up to 20 m</td>
+<td>Knee roots, short buttresses</td>
+<td>Greyish</td>
+</tr>
+<tr>
+<td>Nipah</td>
+<td>13</td>
+<td>Stemless palm</td>
+<td>Underground creeping rhizome</td>
+<td>None (no trunk)</td>
+</tr>
+<tr>
+<td>Bakau Minyak</td>
+<td>14</td>
+<td>Tree, 20 to 30 m or more</td>
+<td>Large stilt roots from up to 5 m up the stem; sometimes aerial roots from branches</td>
+<td>Grey to greyish brown, with shallow cracks</td>
+</tr>
+<tr>
+<td>Dungun Laut</td>
+<td>15</td>
+<td>Tree, up to 35 m</td>
+<td>Plank or ribbon buttresses</td>
+<td>Whitish-grey to pinkish-grey, smooth, becoming flaky and fissured with age</td>
+</tr>
+<tr>
+<td>Pandan Laut</td>
+<td>16</td>
+<td>Branching shrub or small tree, 4 to 14 m</td>
+<td>Prop and stilt roots</td>
+<td></td>
+</tr>
+<tr>
+<td>Perepat</td>
+<td>17</td>
+<td>Tree, usually 15 to 20 m, up to 30 m</td>
+<td>Thick, blunt, cone-shaped pneumatophores, up to 1 m</td>
+<td>Cream to brown, with fine lengthwise fissures</td>
+</tr>
+<tr>
+<td>Tumu Merah</td>
+<td>18</td>
+<td>Tree, up to 20 m</td>
+<td>Knee roots, buttresses</td>
+<td>Dark grey to brown, with distinct lenticels</td>
+</tr>
+<tr>
+<td>Bakau Lilin</td>
+<td>i</td>
+<td>Shrub or small tree, about 7 to 9 m</td>
+<td>No stilt or knee roots; base thickened, roots may look braided</td>
+<td>Greyish to reddish-brown, smooth, with lenticels</td>
+</tr>
+<tr>
+<td>Ketapang</td>
+<td>ii</td>
+<td>Tree, 10 to 25 m, occasionally 35 m</td>
+<td>Often buttressed</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3>Table B: Leaves</h3>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Arrangement</th>
+<th>Type, shape and size</th>
+<th>Tip</th>
+<th>Edge</th>
+<th>Underside</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Akasia</td>
+<td></td>
+<td>Phyllodes, falcate, 10 to 20 × 1.2 to 3 cm, 3 lengthwise nerves</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Api-api Bulu</td>
+<td>Opposite</td>
+<td>Simple, ovate or elliptic, thick, up to 10 × 6 cm</td>
+<td></td>
+<td></td>
+<td>Dense, powdery hairs</td>
+</tr>
+<tr>
+<td>Nyireh Bunga</td>
+<td>Spiral</td>
+<td>Pinnate; leaflets 3.5 to 12 × 2 to 6 cm</td>
+<td>Rounded</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Teruntum Merah</td>
+<td>Spiral, in tufts near the twig ends</td>
+<td>Simple, obovate, slightly thick and fleshy, 2 to 9 × 1 to 2.5 cm</td>
+<td>Rounded or retuse (notched)</td>
+<td>Entire (smooth)</td>
+<td></td>
+</tr>
+<tr>
+<td>Gambir Laut</td>
+<td>Opposite</td>
+<td>Simple, oval or narrowly lance-shaped, thin, 3.8 to 8.8 × 1.8 to 4.3 cm</td>
+<td></td>
+<td></td>
+<td>Gland-dotted</td>
+</tr>
+<tr>
+<td>Buta-buta</td>
+<td>Spiral</td>
+<td>Simple, oval to drop-shaped, 3.7 to 11 × 1.5 to 6 cm</td>
+<td></td>
+<td>Shallowly toothed; 2 to 4 glands each side at the blade base</td>
+<td></td>
+</tr>
+<tr>
+<td>Tuba Laut</td>
+<td>Alternate</td>
+<td>Pinnate, 3 to 7 leathery leaflets, the end one slightly bigger</td>
+<td>Varies</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bebaru</td>
+<td>Spiral</td>
+<td>Simple, cordate, blade 5 to 30 cm</td>
+<td>Pointed</td>
+<td>Finely toothed</td>
+<td>Whitish, with stellate hairs</td>
+</tr>
+<tr>
+<td>Api-api Putih</td>
+<td>Opposite</td>
+<td>Simple, oblong to lanceolate, up to 15 × 5 cm</td>
+<td>Pointed</td>
+<td></td>
+<td>Whitish</td>
+</tr>
+<tr>
+<td>Bakau Kurap</td>
+<td>Opposite (decussate)</td>
+<td>Simple, broadly elliptic, leathery, 11 to 23 cm</td>
+<td>Short stiff point, often broken off</td>
+<td>Entire (smooth)</td>
+<td>Tiny black cork warts</td>
+</tr>
+<tr>
+<td>Tengar Merah</td>
+<td>Opposite (decussate)</td>
+<td>Simple, oval to oval-elliptic, 5.5 to 11 × 3 to 7.5 cm; stalk 1 to 2.5 cm</td>
+<td>Blunt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Berus</td>
+<td>Opposite (decussate)</td>
+<td>Simple, oval, thinly fleshy and leathery, 6 to 17 × 2 to 8 cm</td>
+<td>Pointed</td>
+<td></td>
+<td>Light green</td>
+</tr>
+<tr>
+<td>Nipah</td>
+<td>Fronds rising from the rhizome</td>
+<td>Pinnate frond, 4 to 10 m; leaflets 60 to 130 × 5 to 8 cm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bakau Minyak</td>
+<td>Opposite (decussate)</td>
+<td>Simple, elliptic, leathery, 7 to 19 × 3.5 to 8 cm</td>
+<td>Short stiff point</td>
+<td>Entire</td>
+<td>Tiny black cork warts</td>
+</tr>
+<tr>
+<td>Dungun Laut</td>
+<td>Spiral</td>
+<td>Simple, oblong-elliptic, 6.3 to 30 × 3.8 to 15 cm</td>
+<td></td>
+<td>Entire or slightly wavy</td>
+<td>Scaly, silvery white to brown</td>
+</tr>
+<tr>
+<td>Pandan Laut</td>
+<td>Spiral, clustered at branch tips</td>
+<td>Simple, strap-shaped, 80 to 180 × 4 to 8 cm, parallel-veined</td>
+<td></td>
+<td>Spiny</td>
+<td>Spines under the midrib</td>
+</tr>
+<tr>
+<td>Perepat</td>
+<td>Opposite</td>
+<td>Simple, elliptic to ovate or obovate, 5 to 11 × 4 to 8 cm</td>
+<td>Rounded or broad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tumu Merah</td>
+<td>Opposite (decussate)</td>
+<td>Simple, thinly fleshy and leathery, 9 to 24 × 4 to 9 cm</td>
+<td>Pointed</td>
+<td></td>
+<td>Light green</td>
+</tr>
+<tr>
+<td>Bakau Lilin</td>
+<td>Opposite (decussate)</td>
+<td>Simple, elliptic-oblong, 6 to 13 × 2.5 to 6 cm; stalk 1 to 1.5 cm</td>
+<td></td>
+<td>Curled inward</td>
+<td></td>
+</tr>
+<tr>
+<td>Ketapang</td>
+<td>Clustered at branch tips</td>
+<td>Simple, obovate, shiny, 15 to 25 × 8 to 15 cm (up to 38 × 24 cm)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Example:</strong> you see a tree with opposite leaves and knee roots, but no propagules. Table B leaves 10 plants with opposite leaves, and Table A narrows those to Berus and Tumu Merah. Then look for propagules (see <a href="#check-your-answer">Check your answer</a>).</p></div></details>
+<section class="block" id="check-your-answer"><h2>Check your answer</h2><p>Once you have a name, confirm it with one of these. Fruits and propagules are seasonal, but old ones often lie on the ground under the tree.</p>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Confirm with</th>
+<th>Easily confused with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Akasia</td>
+<td>Flat pods, strongly curved into an open coil, 3.2 to 16 cm long (<a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>)</td>
+<td><em>Acacia mangium</em> (not on the list): phyllodes up to 9.5 cm wide (<a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf">WATTLE</a>)</td>
+</tr>
+<tr>
+<td>Api-api Bulu</td>
+<td>Broadly ovoid fruit, no more than about 18 mm, densely woolly (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>)</td>
+<td>Api-api Putih</td>
+</tr>
+<tr>
+<td>Api-api Putih</td>
+<td>Egg-shaped fruit with a pronounced beak, up to 4 cm (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>)</td>
+<td>Api-api Bulu</td>
+</tr>
+<tr>
+<td>Bakau Kurap</td>
+<td>Collar of hanging propagules pale green or greenish yellow (<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>)</td>
+<td>Bakau Minyak</td>
+</tr>
+<tr>
+<td>Bakau Lilin</td>
+<td>Green, smooth, club-shaped propagules, 15 to 40 cm (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>)</td>
+<td>Bakau Minyak has similar propagules, but stands on stilt roots</td>
+</tr>
+<tr>
+<td>Bakau Minyak</td>
+<td>Collar of hanging propagules red or reddish (<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>)</td>
+<td>Bakau Kurap; Bakau Lilin</td>
+</tr>
+<tr>
+<td>Bebaru</td>
+<td>Rounded fruit capsule, brown when ripe, splitting into 5 parts (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Berus</td>
+<td>Thin, cylindrical propagules, 8 to 15 cm long and 0.8 cm wide (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>)</td>
+<td>Tumu Merah, Tengar Merah</td>
+</tr>
+<tr>
+<td>Buta-buta</td>
+<td>Small round, 3-lobed fruit capsules, about 8 to 9 mm across (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>). (Milky sap is the classic sign, but don't test it.)</td>
+<td>Ketapang (both have leaves that turn red (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3181">NParks</a>))</td>
+</tr>
+<tr>
+<td>Dungun Laut</td>
+<td>Woody, glossy fruit, 3.8 to 8 cm, with a keel on one side (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Gambir Laut</td>
+<td>Drop-shaped fruit about 0.8 cm, green turning black or brown (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Ketapang</td>
+<td>Slightly flattened fruit, 3.5 to 7 cm, with a keel, green turning yellow or red (<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>)</td>
+<td>Buta-buta</td>
+</tr>
+<tr>
+<td>Nipah</td>
+<td>Large fruits, 8 to 11 cm long and 6 to 8 cm wide (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Nyireh Bunga</td>
+<td>Woody fruit the size of a grapefruit or small pomelo (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Pandan Laut</td>
+<td>Pineapple-like fruit, 8 to 30 cm long, green ripening to orange (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>)</td>
+<td>Cooking pandan (<em>P. amaryllifolius</em>, not on the list); see the Pandan Laut section</td>
+</tr>
+<tr>
+<td>Perepat</td>
+<td>Round, flattened fruit, 2 to 4.5 cm across, with the calyx still at its base (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>)</td>
+<td>Berembang (<em>S. caseolaris</em>, not on the list); see the Perepat section</td>
+</tr>
+<tr>
+<td>Tengar Merah</td>
+<td>Propagules with angular ridges, thickening to a sharp tip, 8 to 17 cm (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>)</td>
+<td>Berus</td>
+</tr>
+<tr>
+<td>Teruntum Merah</td>
+<td>Vase-shaped fruit, tinged red, 1 to 2 cm long (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>)</td>
+<td>Teruntum Putih (<em>L. racemosa</em>, not on the list); see the Teruntum Merah section</td>
+</tr>
+<tr>
+<td>Tuba Laut</td>
+<td>Flat, disc- or egg-shaped pods, 3 to 5.5 cm (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>)</td>
+<td>None on the trail</td>
+</tr>
+<tr>
+<td>Tumu Merah</td>
+<td>Cigar-shaped propagules, 19 to 25 cm long and 1 to 1.7 cm wide, green turning dark purple (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>)</td>
+<td>Berus</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Propagule tip:</strong> roll it between your fingers. Tengar Merah has <strong>angular ridges</strong> (<em>bersegi</em>) (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>), Berus is <strong>thin and round</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>), and Tumu Merah is <strong>fat like a cigar</strong> (<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>).</p></section>
+<section class="block" id="limits-of-this-guide"><h2>Limits of this guide</h2><ul>
+<li><strong>It only covers these 20 plants.</strong> A plant that isn't on the list (for example <em>Acacia mangium</em>, Teruntum Putih, Berembang or <em>Thespesia populnea</em>) will still end up at a name, so it can be misidentified. If nothing in "Check your answer" matches, it may be a different species.</li>
+<li><strong>Seasonal couplets:</strong> couplets 13 and 15 need propagules.</li>
+<li><strong>Young trees:</strong> couplets 8 to 14 rely on roots. Saplings may not have their stilt roots or knee roots yet.</li>
+<li><strong>Leaf sizes</strong> are typical ranges, not strict limits. Look at several leaves.</li>
+</ul></section>
+<details class="fold" id="glossary"><summary><h2>Glossary</h2><span class="hint" data-open="Tap to open" data-close="Tap to close"></span></summary><div class="fold-body"><div class="tscroll"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain meaning</th>
+<th>Malay (where used at ecoCare)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alternate leaves</td>
+<td>One leaf at each point on the twig, taking turns up the stem</td>
+<td></td>
+</tr>
+<tr>
+<td>Apiculate</td>
+<td>Ending in a small, short point</td>
+<td></td>
+</tr>
+<tr>
+<td>Bud</td>
+<td>A tiny undeveloped shoot; whole leaves have one at the base of their stalk, leaflets don't</td>
+<td>tunas</td>
+</tr>
+<tr>
+<td>Buttress</td>
+<td>A flared or wing-like base of the trunk that helps support the tree</td>
+<td>akar banir</td>
+</tr>
+<tr>
+<td>Calyx</td>
+<td>The ring of outer flower parts (sepals); in many mangroves it stays on the fruit or propagule</td>
+<td></td>
+</tr>
+<tr>
+<td>Collar</td>
+<td>The short tube at the top of a <em>Rhizophora</em> propagule, where it comes out of the fruit</td>
+<td></td>
+</tr>
+<tr>
+<td>Cordate</td>
+<td>Heart-shaped, with a notch where the stalk joins</td>
+<td>bentuk hati</td>
+</tr>
+<tr>
+<td>Cork warts</td>
+<td>Tiny black dots on the leaf underside of <em>Rhizophora</em></td>
+<td>bintik hitam</td>
+</tr>
+<tr>
+<td>Decussate</td>
+<td>Opposite pairs of leaves, each pair at right angles to the next</td>
+<td></td>
+</tr>
+<tr>
+<td>Elliptic</td>
+<td>Oval, widest in the middle</td>
+<td></td>
+</tr>
+<tr>
+<td>Entire</td>
+<td>A smooth leaf edge, with no teeth or lobes</td>
+<td></td>
+</tr>
+<tr>
+<td>Falcate</td>
+<td>Curved like a sickle</td>
+<td></td>
+</tr>
+<tr>
+<td>Gland</td>
+<td>A small bump that produces a substance</td>
+<td></td>
+</tr>
+<tr>
+<td>Interpetiolar stipules</td>
+<td>A pointed sheath between the stalks of a pair of opposite leaves, which falls off early and leaves a ring scar</td>
+<td></td>
+</tr>
+<tr>
+<td>Knee roots</td>
+<td>Roots that loop up out of the mud and back down, like bent knees</td>
+<td>akar lutut</td>
+</tr>
+<tr>
+<td>Lanceolate</td>
+<td>Narrow and tapering to a point, like a spearhead</td>
+<td></td>
+</tr>
+<tr>
+<td>Leaflet</td>
+<td>One of the small blades that make up a pinnate leaf; it has no bud at its base</td>
+<td>anak daun</td>
+</tr>
+<tr>
+<td>Lenticels</td>
+<td>Small raised pores on bark or roots that let air in</td>
+<td></td>
+</tr>
+<tr>
+<td>Midrib</td>
+<td>The main vein running down the middle of a leaf</td>
+<td></td>
+</tr>
+<tr>
+<td>Mucro</td>
+<td>A short, sharp point at the leaf tip</td>
+<td></td>
+</tr>
+<tr>
+<td>Mucronate</td>
+<td>Ending in a short, stiff point</td>
+<td></td>
+</tr>
+<tr>
+<td>Obovate</td>
+<td>Egg-shaped, widest near the tip</td>
+<td></td>
+</tr>
+<tr>
+<td>Opposite leaves</td>
+<td>Two leaves at the same point on the twig, facing each other</td>
+<td>berpasangan</td>
+</tr>
+<tr>
+<td>Ovate</td>
+<td>Egg-shaped, widest near the base</td>
+<td></td>
+</tr>
+<tr>
+<td>Parallel veins</td>
+<td>Veins running side by side from base to tip</td>
+<td></td>
+</tr>
+<tr>
+<td>Petiole</td>
+<td>Leaf stalk</td>
+<td>tangkai daun</td>
+</tr>
+<tr>
+<td>Phyllode</td>
+<td>A flattened leaf stalk that looks and works like a leaf</td>
+<td></td>
+</tr>
+<tr>
+<td>Pinnate</td>
+<td>One leaf made of several leaflets along a central stalk, like a feather</td>
+<td>daun majmuk</td>
+</tr>
+<tr>
+<td>Plank buttress</td>
+<td>A flat, board-like root that winds along the ground</td>
+<td></td>
+</tr>
+<tr>
+<td>Pneumatophore</td>
+<td>A breathing root that grows up out of the mud</td>
+<td>akar pensel (thin ones)</td>
+</tr>
+<tr>
+<td>Prop roots</td>
+<td>Roots that drop from the branches down towards the ground, like the long hanging root on the big Bakau Minyak. Some sources use "prop root" loosely for stilt roots too</td>
+<td></td>
+</tr>
+<tr>
+<td>Propagule</td>
+<td>A seedling that has already started growing on the parent tree (in viviparous mangroves)</td>
+<td>anak benih, "buah"</td>
+</tr>
+<tr>
+<td>Retuse</td>
+<td>Rounded with a shallow notch at the tip</td>
+<td></td>
+</tr>
+<tr>
+<td>Rhizome</td>
+<td>A stem that grows horizontally under the ground or mud</td>
+<td>rizom</td>
+</tr>
+<tr>
+<td>Ring scar</td>
+<td>A ring-shaped mark left on the twig where a stipule fell off</td>
+<td></td>
+</tr>
+<tr>
+<td>Salt glands</td>
+<td>Tiny glands on the leaf that push out excess salt</td>
+<td></td>
+</tr>
+<tr>
+<td>Simple leaf</td>
+<td>A leaf with one undivided blade</td>
+<td>daun tunggal</td>
+</tr>
+<tr>
+<td>Stellate hairs</td>
+<td>Tiny star-shaped hairs</td>
+<td></td>
+</tr>
+<tr>
+<td>Stilt roots</td>
+<td>Arching roots growing from the lower trunk into the mud, like spider legs (<em>Rhizophora</em>, Tengar Merah, Pandan Laut)</td>
+<td>akar jangkang</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<details class="fold" id="sources-by-plant"><summary><h2>Sources by plant</h2><span class="hint" data-open="Tap to open" data-close="Tap to close"></span></summary><div class="fold-body"><ul>
+<li><strong>Akasia:</strong> <a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>; <em>A. mangium</em> comparison <a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf">WATTLE</a>.</li>
+<li><strong>Api-api Bulu:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>.</li>
+<li><strong>Api-api Putih:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>.</li>
+<li><strong>Bakau Kurap:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/6/4639">NParks</a>; bark from <a href="https://prosea.prota4u.org/view.aspx?id=3038">PROSEA</a>; propagule collar, leaf tip and cork warts from <a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>; broken-off tips from <a href="https://minerva.union.edu/gillikid/mangrove_14May2020/r_mucronata.htm">Gillikin &amp; Verheyden</a>.</li>
+<li><strong>Bakau Lilin:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>; <a href="https://uses.plantnet-project.org/en/Kandelia_candel_(PROSEA)">PROSEA</a>.</li>
+<li><strong>Bakau Minyak:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3265">NParks</a>; <a href="https://prosea.prota4u.org/view.aspx?id=3038">PROSEA</a>; propagule collar, leaf tip and cork warts from <a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay et al. 2024</a>.</li>
+<li><strong>Bebaru:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>; <a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm">Plants of South Eastern New South Wales</a>.</li>
+<li><strong>Berus:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>.</li>
+<li><strong>Buta-buta:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>; sap toxicity from <a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html">Atlas of Poisonous Plants in Hong Kong</a>.</li>
+<li><strong>Dungun Laut:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>.</li>
+<li><strong>Gambir Laut:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>; <a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm">CSIRO, Australian Tropical Rainforest Plants</a>.</li>
+<li><strong>Ketapang:</strong> <a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>; leaf colour from <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3181">NParks</a>.</li>
+<li><strong>Nipah:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>.</li>
+<li><strong>Nyireh Bunga:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>; leaf arrangement from <a href="https://prosea.prota4u.org/view.aspx?id=6490">PROSEA</a>.</li>
+<li><strong>Pandan Laut:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>.</li>
+<li><strong>Perepat:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>.</li>
+<li><strong>Tengar Merah:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>.</li>
+<li><strong>Teruntum Merah:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>; leaf arrangement from <a href="https://prosea.prota4u.org/view.aspx?id=5744">PROSEA</a>.</li>
+<li><strong>Tuba Laut:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>.</li>
+<li><strong>Tumu Merah:</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>.</li>
+<li><strong>Family Rhizophoraceae</strong> (decussate leaves, interpetiolar stipules, ring scars): <a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>.</li>
+</ul></div></details>
+<details class="fold" id="sources"><summary><h2>Sources</h2><span class="hint" data-open="Tap to open" data-close="Tap to close"></span></summary><div class="fold-body"><ul>
+<li>Hou, D. (1958). Rhizophoraceae. <em>Flora Malesiana</em>, ser. I, vol. 5. <a href="https://repository.naturalis.nl/pub/532504">Naturalis repository</a></li>
+<li>NParks Flora &amp; Fauna Web, National Parks Board, Singapore: species pages linked above.</li>
+<li>Gillikin, D. &amp; Verheyden, A. <em>A field guide to Kenyan mangroves</em>: <a href="https://minerva.union.edu/gillikid/mangrove_14May2020/r_mucronata.htm"><em>Rhizophora mucronata</em></a>.</li>
+<li>Hospital Authority, Hong Kong. <em>Atlas of Poisonous Plants in Hong Kong</em>: <a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html"><em>Excoecaria agallocha</em></a>.</li>
+<li>Ngernsaengsaruay, C., Chanton, P., Leksungnoen, N., Uthairatsamee, S. &amp; Mianmit, N. (2024). A taxonomic revision of <em>Rhizophora</em> L. (Rhizophoraceae) in Thailand. <em>PeerJ</em> 12: e17460. <a href="https://doi.org/10.7717/peerj.17460">DOI</a></li>
+<li>PROSEA (Plant Resources of South-East Asia): <a href="https://prosea.prota4u.org/view.aspx?id=3038"><em>Rhizophora apiculata</em></a>, <a href="https://uses.plantnet-project.org/en/Kandelia_candel_(PROSEA)"><em>Kandelia candel</em></a>, <a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)"><em>Terminalia catappa</em></a>, <a href="https://prosea.prota4u.org/view.aspx?id=5744"><em>Lumnitzera</em></a>, <a href="https://prosea.prota4u.org/view.aspx?id=6490"><em>Xylocarpus</em></a>.</li>
+<li>WATTLE: Acacias of Australia (Lucid key): <a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm"><em>Acacia auriculiformis</em></a>, <a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf"><em>Acacia mangium</em></a>.</li>
+<li>CSIRO (2020). <em>Australian Tropical Rainforest Plants</em>, online edition: <a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm"><em>Clerodendrum inerme</em></a>.</li>
+<li><em>Plants of South Eastern New South Wales</em> (Lucid): <a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm"><em>Hibiscus tiliaceus</em></a>.</li>
+</ul></div></details>
+</div>
+</div>
+<template id="key-ja">
+<div class="wrap" lang="ja">
+<a class="back-link" href="index.html#ja">← 樹木ノート</a>
+<header class="masthead"><p class="kicker">ecoCare Kerteh · マングローブ・ガイドツアー</p><h1>ecoCare マングローブ・トレイル：20種の検索表</h1><div class="intro"><p>トレイルの18種と「ecoCare 周辺」の2本の木を、<strong>花を使わずに</strong>、生育型、根、樹皮、葉、散布体から見分けるための手引きです。よく似た2組（2種のバカウ、およびブルスとトゥム・メラ）は、散布体で見分けます。専門用語は <strong>太字</strong> で示し、初めて出てくるところで括弧内にやさしい説明をつけました。用語はすべて<a href="#glossary">用語集</a>にもあります。すべての事実に括弧内の出典があり、末尾に一覧があります。</p>
+<p>この手引きには2つの道具があります。</p>
+<ul>
+<li><strong><a href="#the-key">検索表</a>：</strong>「aかbか？」の問いに順に答えていくと、名前にたどり着きます。初心者や子ども向け。</li>
+<li><strong><a href="#character-matrix">形質一覧表</a>：</strong> 20種すべての特徴を並べた2つの表。見える特徴から始めて、合わない植物を除いていきます。検索表の特徴が見えにくいときに便利です。</li>
+</ul>
+<p><strong>状況：</strong> 下書き。トレイルではまだ試していません（2026年10月29日に出典と照合）。</p>
+</div></header>
+<section class="block" id="how-to-use"><h2>検索表の使い方</h2><ol>
+<li>対句 <strong>1</strong> から始めます。各対句には <strong>a</strong> と <strong>b</strong> の2つの選択肢があります。</li>
+<li>決める前に <strong>両方</strong> の選択肢を読みます。植物により合うほうを選び、矢印に従って次の対句か名前へ進みます。</li>
+<li>ほとんどの選択肢には2〜3個の特徴が書いてあります。最初のものがいちばん確実です。見えにくいときは、ほかの特徴を使います。</li>
+<li>葉は1枚だけでなく <strong>何枚も</strong> 見ます。日陰、傷、葉の年齢で、大きさや形が変わります。</li>
+<li><strong>成長した木</strong> を使います。若い木には、特徴的な根がまだないことがあります（たとえばニレ・ブンガの板根は、若い木ではふつう見られません（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>)）。</li>
+<li>名前にたどり着いたら、<a href="#check-your-answer">答えを確かめる</a>へ進み、果実や散布体など2つ目の特徴で確認します。</li>
+</ol>
+<p><strong>大きさの目安：</strong> 新しい鉛筆は長さ約18cm、大人の手のひらは幅約8cmです。</p>
+<p><strong>葉か小葉か？</strong> 小枝とつながるところを見ます。1枚の葉には、葉柄の付け根の上のすき間に小さな <strong>芽</strong>（ごく小さな新芽）があります。<strong>小葉</strong>（分かれた葉の一部）の付け根には芽がありません。</p>
+<blockquote>
+<p><strong>安全第一</strong></p>
+<ul>
+<li><strong>ブタブタ：</strong> 葉や小枝を絶対に折らないこと。白い乳液は皮膚を刺激し、目に入ると痛みを伴う炎症を起こし、重い場合は失明することもあります（<a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html">Atlas of Poisonous Plants in Hong Kong</a>）。</li>
+<li><strong>パンダン・ラウト：</strong> 葉の縁に鋭いとげがあります。葉に沿って手をすべらせないこと。</li>
+<li>呼吸根を踏まないこと。木から散布体を引き抜かないこと。</li>
+<li><strong>ニレ・ブンガ：</strong> 熟した実のなる木の下に立たないこと。木質の果実はグレープフルーツ〜小ぶりのザボンほどの大きさです（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>）。</li>
+<li><strong>クタパン：</strong> 中空の小枝にかむアリがすんでいることがあるので、小枝を折らないこと。</li>
+</ul>
+</blockquote></section>
+<section class="block" id="the-key"><h2>検索表</h2><section class="couplet" id="c1" aria-label="対句 1"><span class="cnum" aria-hidden="true">1</span><div class="choice"><span class="tag">1a</span><div class="ctext"><p><strong>羽状複葉</strong>（1枚の葉が、中軸に沿って並ぶ何枚もの小葉からできているもの）をもつ <strong>木質のつる</strong>（茎が木のようにかたいつる）。小葉は革質で3〜7枚、先端に1枚の小葉があり、ほかより少し大きい。葉は <strong>互生</strong>。長さ15m以上になり、ほかの植物に巻きついたり、地面を這ったりする（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#tuba-laut" data-tree="tuba-laut" title="樹木ノートでこの木を開く"><strong>トゥバ・ラウト / Tuba Laut</strong></a>（<em>Derris trifoliata</em>）</p></div></div><div class="choice"><span class="tag">1b</span><div class="ctext"><p>羽状複葉をもつ木質のつる <strong>ではない</strong>。</p><p class="arrow">→ <a class="goto" href="#c2">2へ</a></p></div></div></section>
+<section class="couplet" id="c2" aria-label="対句 2"><span class="cnum" aria-hidden="true">2</span><div class="choice"><span class="tag">2a</span><div class="ctext"><p><strong>ヤシのような</strong> 植物。葉はとても長く（60cm以上）、帯状か鳥の羽状で、<strong>平行脈</strong>（イネ科の葉のように、付け根から先まで並んで走る葉脈）がある。</p><p class="arrow">→ <a class="goto" href="#c3">3へ</a></p></div></div><div class="choice"><span class="tag">2b</span><div class="ctext"><p>ヤシのような植物 <strong>ではない</strong>。葉（または葉のように見える部分）は長さ40cm未満。いちばん大きいクタパンの葉で約38cm（<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>）。</p><p class="arrow">→ <a class="goto" href="#c4">4へ</a></p></div></div></section>
+<section class="couplet" id="c3" aria-label="対句 3"><span class="cnum" aria-hidden="true">3</span><div class="choice"><span class="tag">3a</span><div class="ctext"><p><strong>直立した幹がない。</strong> 茎は <strong>根茎</strong>（地下茎）として地中を這う。長さ4〜10mの巨大な <strong>羽状の葉</strong> が泥から直接立ち上がり、中軸の片側に最大100枚の長い小葉がつく（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#nipah" data-tree="nipah" title="樹木ノートでこの木を開く"><strong>ニパ / Nipah</strong></a>（<em>Nypa fruticans</em>）</p></div></div><div class="choice"><span class="tag">3b</span><div class="ctext"><p><strong>枝分かれする幹</strong> があり、高さ最大14m、<strong>支柱根</strong>（幹の下部や枝から出て地面に下りる根）がある。葉は <strong>帯状</strong>（ベルトのように細長い）で長さ80〜180cm、幅4〜8cm、枝先に <strong>らせん状</strong> につき、縁と主脈の裏に <strong>とげ</strong> がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#pandan-laut" data-tree="pandan-laut" title="樹木ノートでこの木を開く"><strong>パンダン・ラウト / Pandan Laut</strong></a>（<em>Pandanus tectorius</em>）</p></div></div></section>
+<section class="couplet" id="c4" aria-label="対句 4"><span class="cnum" aria-hidden="true">4</span><div class="choice"><span class="tag">4a</span><div class="ctext"><p>葉は <strong>羽状複葉</strong> で、小葉は長さ3.5〜12cm、<strong>先が丸い</strong>。樹皮はなめらかで薄くはがれ、淡褐色、黄色っぽい色、緑がかった色、または灰色に淡褐色〜オレンジ色のまだら。成木には、地面をくねって伸びる長い <strong>板根</strong> がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#nyireh-bunga" data-tree="nyireh-bunga" title="樹木ノートでこの木を開く"><strong>ニレ・ブンガ / Nyireh Bunga</strong></a>（<em>Xylocarpus granatum</em>）</p></div></div><div class="choice"><span class="tag">4b</span><div class="ctext"><p>葉は <strong>単葉</strong>（1本の葉柄に分かれていない葉身が1枚つき、付け根に芽がある）。</p><p class="arrow">→ <a class="goto" href="#c5">5へ</a></p></div></div></section>
+<section class="couplet" id="c5" aria-label="対句 5"><span class="cnum" aria-hidden="true">5</span><div class="choice"><span class="tag">5a</span><div class="ctext"><p><strong>仮葉</strong>（葉に見えるが、実は扁平になった葉柄）：細く <strong>鎌形</strong>（鎌のように湾曲）で、長さ10〜20cm、幅1.2〜3cm、<strong>縦の脈が3本</strong> 並んで走る（<a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>）。</p><p class="arrow">→ <a class="result" href="index.html#akasia" data-tree="akasia" title="樹木ノートでこの木を開く"><strong>アカシア / Akasia</strong></a>（<em>Acacia auriculiformis</em>）</p></div></div><div class="choice"><span class="tag">5b</span><div class="ctext"><p><strong>主脈</strong>（中央を走る太い葉脈）と、そこから枝分かれする側脈をもつ本物の葉。</p><p class="arrow">→ <a class="goto" href="#c6">6へ</a></p></div></div></section>
+<section class="couplet" id="c6" aria-label="対句 6"><span class="cnum" aria-hidden="true">6</span><div class="choice"><span class="tag">6a</span><div class="ctext"><p>葉は <strong>対生</strong>（小枝の同じ位置に2枚ずつ向かい合ってつく）。ヒルギ科では対が <strong>十字対生</strong>（各対が下の対と直角になる）（<a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>）。</p><p class="arrow">→ <a class="goto" href="#c7">7へ</a></p></div></div><div class="choice"><span class="tag">6b</span><div class="ctext"><p>葉は <strong>互生</strong>（1か所に1枚ずつ、小枝を交互にのぼってつく。らせん状につくものもある）。</p><p class="arrow">→ <a class="goto" href="#c16">16へ</a></p></div></div></section>
+<section class="couplet" id="c7" aria-label="対句 7"><span class="cnum" aria-hidden="true">7</span><div class="choice"><span class="tag">7a</span><div class="ctext"><p><strong>高木ではない</strong>：高さ約3mまでの直立する低木、または長さ最大13mのつる。葉は薄く、長さ3.8〜8.8cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>）、裏面に小さな腺点がある（<a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm">CSIRO</a>）。</p><p class="arrow">→ <a class="result" href="index.html#gambir-laut" data-tree="gambir-laut" title="樹木ノートでこの木を開く"><strong>ガンビル・ラウト / Gambir Laut</strong></a>（<em>Clerodendrum inerme</em>、異名 <em>Volkameria inermis</em>）</p></div></div><div class="choice"><span class="tag">7b</span><div class="ctext"><p><strong>高木</strong>。</p><p class="arrow">→ <a class="goto" href="#c8">8へ</a></p></div></div></section>
+<section class="couplet" id="c8" aria-label="対句 8"><span class="cnum" aria-hidden="true">8</span><div class="choice"><span class="tag">8a</span><div class="ctext"><p>小枝に輪状の痕がない。<strong>呼吸根</strong>（木の周りの泥からまっすぐ上に伸びる根）がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>）。</p><p class="arrow">→ <a class="goto" href="#c9">9へ</a></p></div></div><div class="choice"><span class="tag">8b</span><div class="ctext"><p>葉の対ごとに、小枝をぐるりと囲む <strong>輪状の痕</strong> がある。これは <strong>葉柄間托葉</strong>（2本の葉柄の間にあり、芽の先を包んで早く落ちる、とがったさや）が落ちた跡（<a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>）。これがマングローブの <strong>ヒルギ科</strong>。支柱根、膝根、または特別な根のない木がある。</p><p class="arrow">→ <a class="goto" href="#c11">11へ</a></p></div></div></section>
+<section class="couplet" id="c9" aria-label="対句 9"><span class="cnum" aria-hidden="true">9</span><div class="choice"><span class="tag">9a</span><div class="ctext"><p>呼吸根は <strong>太く、先が丸い円錐形</strong> で、高さ最大1m。葉は長さ5〜11cm、幅4〜8cmで、<strong>先が丸いか幅広い</strong>（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#perepat" data-tree="perepat" title="樹木ノートでこの木を開く"><strong>プルパット / Perepat</strong></a>（<em>Sonneratia alba</em>）</p></div></div><div class="choice"><span class="tag">9b</span><div class="ctext"><p>呼吸根は <strong>鉛筆のように細い</strong>（<em>akar pensel</em>）。アピアピ・プティでは高さ15〜20cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>）。アピアピ・プティの葉には、塩を外に出す <strong>塩腺</strong> がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>）。</p><p class="arrow">→ <a class="goto" href="#c10">10へ</a></p></div></div></section>
+<section class="couplet" id="c10" aria-label="対句 10"><span class="cnum" aria-hidden="true">10</span><div class="choice"><span class="tag">10a</span><div class="ctext"><p>葉は <strong>細長く先がとがる</strong>：長楕円形〜 <strong>披針形</strong>（細長く先に向かって細くなる）で、長さ最大15cm、幅最大5cm。裏面は <strong>白っぽい</strong>（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#api-api-putih" data-tree="api-api-putih" title="樹木ノートでこの木を開く"><strong>アピアピ・プティ / Api-api Putih</strong></a>（<em>Avicennia alba</em>）</p></div></div><div class="choice"><span class="tag">10b</span><div class="ctext"><p>葉は <strong>幅広い</strong>：<strong>卵形</strong> または <strong>楕円形</strong> で、長さ最大10cm、幅最大6cm、厚い。裏面は <strong>密な粉状の毛</strong> に覆われる（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#api-api-bulu" data-tree="api-api-bulu" title="樹木ノートでこの木を開く"><strong>アピアピ・ブル / Api-api Bulu</strong></a>（<em>Avicennia rumphiana</em>）</p></div></div></section>
+<section class="couplet" id="c11" aria-label="対句 11"><span class="cnum" aria-hidden="true">11</span><div class="choice"><span class="tag">11a</span><div class="ctext"><p><strong>支柱根</strong>（<em>akar jangkang</em>：幹から出てアーチ状に泥の中へ下りる根。クモの脚のよう）がある。</p><p class="arrow">→ <a class="goto" href="#c12">12へ</a></p></div></div><div class="choice"><span class="tag">11b</span><div class="ctext"><p>支柱根がない。</p><p class="arrow">→ <a class="goto" href="#c14">14へ</a></p></div></div></section>
+<section class="couplet" id="c12" aria-label="対句 12"><span class="cnum" aria-hidden="true">12</span><div class="choice"><span class="tag">12a</span><div class="ctext"><p>支柱根は <strong>小さく</strong>、幹の根元にだけある。葉の先は <strong>鈍い</strong>（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#tengar-merah" data-tree="tengar-merah" title="樹木ノートでこの木を開く"><strong>トゥンガル・メラ / Tengar Merah</strong></a>（<em>Ceriops zippeliana</em>）</p></div></div><div class="choice"><span class="tag">12b</span><div class="ctext"><p>支柱根は <strong>大きくアーチ状</strong> で、バカウ・ミニャッでは幹の高さ最大5mから出る（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3265">NParks</a>）。葉の先はとがり、<strong>短く硬い突起</strong>（<strong>微突起</strong>）で終わる（<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>）。</p><p class="arrow">→ <a class="goto" href="#c13">13へ</a></p></div></div></section>
+<section class="couplet" id="c13" aria-label="対句 13"><span class="cnum" aria-hidden="true">13</span><div class="choice"><span class="tag">13a</span><div class="ctext"><p>まだ木にぶら下がっている散布体の <strong>襟（カラー）</strong>（散布体が果実から出てくるところにある、上端の短い筒）が <strong>淡い緑色系</strong>：淡い緑色か、緑がかった黄色（<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>）。</p><p class="arrow">→ <a class="result" href="index.html#bakau-kurap" data-tree="bakau-kurap" title="樹木ノートでこの木を開く"><strong>バカウ・クラップ / Bakau Kurap</strong></a>（<em>Rhizophora mucronata</em>）</p></div></div><div class="choice"><span class="tag">13b</span><div class="ctext"><p>まだ木にぶら下がっている散布体の襟が <strong>赤系</strong>：赤、暗い緑がかった赤、または赤みを帯びた暗緑色（<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>）。</p><p class="arrow">→ <a class="result" href="index.html#bakau-minyak" data-tree="bakau-minyak" title="樹木ノートでこの木を開く"><strong>バカウ・ミニャッ / Bakau Minyak</strong></a>（<em>Rhizophora apiculata</em>）</p></div></div><p class="cnote"><em>木に散布体がない？ 別の季節にまた来て確かめましょう。</em></p></section>
+<section class="couplet" id="c14" aria-label="対句 14"><span class="cnum" aria-hidden="true">14</span><div class="choice"><span class="tag">14a</span><div class="ctext"><p><strong>膝根</strong>（<em>akar lutut</em>：泥から輪のように出てまた泥に戻る、曲げた膝のような根）がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>）。</p><p class="arrow">→ <a class="goto" href="#c15">15へ</a></p></div></div><div class="choice"><span class="tag">14b</span><div class="ctext"><p><strong>膝根がない。</strong> 葉の縁が内側に巻く。幹の根元が太く、根が編んだように見えることがある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#bakau-lilin" data-tree="bakau-lilin" title="樹木ノートでこの木を開く"><strong>バカウ・リリン / Bakau Lilin</strong></a>（<em>Kandelia candel</em>）</p></div></div></section>
+<section class="couplet" id="c15" aria-label="対句 15"><span class="cnum" aria-hidden="true">15</span><div class="choice"><span class="tag">15a</span><div class="ctext"><p>散布体は <strong>細く</strong>、長さ8〜15cm、幅0.8cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#berus" data-tree="berus" title="樹木ノートでこの木を開く"><strong>ブルス / Berus</strong></a>（<em>Bruguiera cylindrica</em>）</p></div></div><div class="choice"><span class="tag">15b</span><div class="ctext"><p>散布体は <strong>太い葉巻形</strong> で、長さ19〜25cm、幅1〜1.7cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#tumu-merah" data-tree="tumu-merah" title="樹木ノートでこの木を開く"><strong>トゥム・メラ / Tumu Merah</strong></a>（<em>Bruguiera gymnorhiza</em>）</p></div></div><p class="cnote"><em>木に散布体がない？ 木の下の地面に落ちているものを探しましょう。</em></p></section>
+<section class="couplet" id="c16" aria-label="対句 16"><span class="cnum" aria-hidden="true">16</span><div class="choice"><span class="tag">16a</span><div class="ctext"><p>葉は <strong>心形</strong>（ハート形で、葉柄のつくところにくぼみがある）で、先がとがり、縁に細かい鋸歯があり、<strong>らせん状</strong> につく（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>）。葉身は長さ5〜30cm。裏面は <strong>白っぽく</strong>、<strong>星状毛</strong>（ルーペで見える、小さな星形の毛）が密に生える（<a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm">Plants of SE NSW</a>）。</p><p class="arrow">→ <a class="result" href="index.html#bebaru" data-tree="bebaru" title="樹木ノートでこの木を開く"><strong>ブバル / Bebaru</strong></a>（<em>Hibiscus tiliaceus</em>、異名 <em>Talipariti tiliaceum</em>）</p></div></div><div class="choice"><span class="tag">16b</span><div class="ctext"><p>葉はハート形ではない。</p><p class="arrow">→ <a class="goto" href="#c17">17へ</a></p></div></div></section>
+<section class="couplet" id="c17" aria-label="対句 17"><span class="cnum" aria-hidden="true">17</span><div class="choice"><span class="tag">17a</span><div class="ctext"><p>葉の裏は <strong>うろこ状で銀白色〜茶色</strong>、鏡のように光る。葉は長さ6.3〜30cmで、<strong>らせん状</strong> につく。幹の根元に <strong>板状・リボン状の板根</strong> がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>）。</p><p class="arrow">→ <a class="result" href="index.html#dungun-laut" data-tree="dungun-laut" title="樹木ノートでこの木を開く"><strong>ドゥングン・ラウト / Dungun Laut</strong></a>（<em>Heritiera littoralis</em>）</p></div></div><div class="choice"><span class="tag">17b</span><div class="ctext"><p>葉の裏は銀色のうろこ状 <strong>ではない</strong>。</p><p class="arrow">→ <a class="goto" href="#c18">18へ</a></p></div></div></section>
+<section class="couplet" id="c18" aria-label="対句 18"><span class="cnum" aria-hidden="true">18</span><div class="choice"><span class="tag">18a</span><div class="ctext"><p>葉は <strong>大きく</strong>、ふつう長さ15〜25cm（最大38cm）、<strong>倒卵形</strong> で光沢があり、<strong>枝先に集まってつく</strong>。枝は水平に伸び、<strong>1〜2m間隔の段</strong> になるので、若い木は塔（パゴダ）のような形になる（<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>）。</p><p class="arrow">→ <a class="result" href="index.html#ketapang" data-tree="ketapang" title="樹木ノートでこの木を開く"><strong>クタパン / Ketapang</strong></a>（<em>Terminalia catappa</em>）</p></div></div><div class="choice"><span class="tag">18b</span><div class="ctext"><p>葉は <strong>小さく</strong>、長さ最大11cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>）。</p><p class="arrow">→ <a class="goto" href="#c19">19へ</a></p></div></div></section>
+<section class="couplet" id="c19" aria-label="対句 19"><span class="cnum" aria-hidden="true">19</span><div class="choice"><span class="tag">19a</span><div class="ctext"><p>葉の縁は <strong>なめらか</strong>（鋸歯がない）。葉は <strong>倒卵形</strong>（先のほうがいちばん幅広い卵形）で、長さ2〜9cm、幅1〜2.5cm、やや厚く多肉質で、先は丸いか <strong>凹形</strong>（浅くくぼむ）（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>）。小枝の先のほうに <strong>らせん状</strong> に房になってつく（<a href="https://prosea.prota4u.org/view.aspx?id=5744">PROSEA</a>）。</p><p class="arrow">→ <a class="result" href="index.html#teruntum-merah" data-tree="teruntum-merah" title="樹木ノートでこの木を開く"><strong>トゥルントゥム・メラ / Teruntum Merah</strong></a>（<em>Lumnitzera littorea</em>）</p></div></div><div class="choice"><span class="tag">19b</span><div class="ctext"><p>葉の縁に <strong>鋸歯がある</strong>：浅い鋸歯で、葉身と葉柄の境目の両側に2〜4個の小さな <strong>腺</strong> がある。葉は卵形〜しずく形で長さ3.7〜11cm、<strong>らせん状</strong> につく。古い葉は鮮やかな赤になる（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>）。<strong>この木のどの部分にもさわったり折ったりしないこと。</strong></p><p class="arrow">→ <a class="result" href="index.html#buta-buta" data-tree="buta-buta" title="樹木ノートでこの木を開く"><strong>ブタブタ / Buta-buta</strong></a>（<em>Excoecaria agallocha</em>）</p></div></div></section></section>
+<details class="fold" id="character-matrix"><summary><h2>形質一覧表</h2><span class="hint" data-open="タップして開く" data-close="タップして閉じる"></span></summary><div class="fold-body"><p>検索表の対句に答えられないときや、名前を再確認したいときに、この2つの表を使います。はっきり見える特徴を1つ選び、合わない植物をすべて除き、次の特徴へ進みます。</p>
+<p><strong>番号</strong> は ecoCare パンフレットのトレイルの順番です。「i」と「ii」はパンフレットの地点ではない、ecoCare 周辺の2本の木です。各行の出典は<a href="#sources-by-plant">植物ごとの出典</a>にあります。</p>
+<h3>表A：生育型、根、樹皮</h3>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>名前</th>
+<th>番号</th>
+<th>生育型</th>
+<th>根と幹の根元</th>
+<th>樹皮</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アカシア</td>
+<td>1</td>
+<td>高木、最大35m</td>
+<td></td>
+<td>裂け目があり、灰色〜黒色</td>
+</tr>
+<tr>
+<td>アピアピ・ブル</td>
+<td>2</td>
+<td>高木、最大30m</td>
+<td>鉛筆状の呼吸根</td>
+<td>暗灰色、なめらか</td>
+</tr>
+<tr>
+<td>ニレ・ブンガ</td>
+<td>3</td>
+<td>高木、最大20m</td>
+<td>地面をくねって伸びる長い板根（成木）</td>
+<td>なめらかで薄くはがれる。淡褐色、黄色っぽい色、緑がかった色、または灰色にオレンジ色のまだら</td>
+</tr>
+<tr>
+<td>トゥルントゥム・メラ</td>
+<td>4</td>
+<td>高木、最大25m</td>
+<td>呼吸根。板根はない</td>
+<td>暗褐色、裂け目がある</td>
+</tr>
+<tr>
+<td>ガンビル・ラウト</td>
+<td>5</td>
+<td>高さ約3mまでの低木、または最大13mのつる</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ブタブタ</td>
+<td>6</td>
+<td>高木、最大15m</td>
+<td>浅く地表を這う根、こぶ状になることが多い</td>
+<td>灰褐色、いぼ状、縦の裂け目と皮目がある</td>
+</tr>
+<tr>
+<td>トゥバ・ラウト</td>
+<td>7</td>
+<td>木質のつる、長さ15m以上</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ブバル</td>
+<td>8</td>
+<td>低木状の高木、最大15m</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>アピアピ・プティ</td>
+<td>9</td>
+<td>高木、最大20m</td>
+<td>鉛筆状の呼吸根、15〜20cm</td>
+<td>なめらか、茶色がかった黒色</td>
+</tr>
+<tr>
+<td>バカウ・クラップ</td>
+<td>10</td>
+<td>高木、20〜25m</td>
+<td>支柱根。下の枝から気根</td>
+<td>暗い色で、割れ目がある</td>
+</tr>
+<tr>
+<td>トゥンガル・メラ</td>
+<td>11</td>
+<td>小高木、最大10〜12m</td>
+<td>幹の根元に小さな支柱根</td>
+<td>灰褐色、皮目が突き出し、根元ははがれやすい</td>
+</tr>
+<tr>
+<td>ブルス</td>
+<td>12</td>
+<td>高木、最大20m</td>
+<td>膝根、短い板根</td>
+<td>灰色っぽい</td>
+</tr>
+<tr>
+<td>ニパ</td>
+<td>13</td>
+<td>幹のないヤシ</td>
+<td>地中を這う根茎</td>
+<td>なし（幹がない）</td>
+</tr>
+<tr>
+<td>バカウ・ミニャッ</td>
+<td>14</td>
+<td>高木、30mかそれ以上</td>
+<td>幹の高さ最大5mから出る大きな支柱根。枝から気根が出ることもある</td>
+<td>灰色〜灰褐色、浅い割れ目がある</td>
+</tr>
+<tr>
+<td>ドゥングン・ラウト</td>
+<td>15</td>
+<td>高木、最大35m</td>
+<td>板状・リボン状の板根</td>
+<td>白っぽい灰色〜ピンクがかった灰色、なめらかで、古くなるとはがれて裂ける</td>
+</tr>
+<tr>
+<td>パンダン・ラウト</td>
+<td>16</td>
+<td>枝分かれする低木または小高木、4〜14m</td>
+<td>支柱根</td>
+<td></td>
+</tr>
+<tr>
+<td>プルパット</td>
+<td>17</td>
+<td>高木、ふつう15〜20m、最大30m</td>
+<td>太く先の丸い円錐形の呼吸根、最大1m</td>
+<td>クリーム色〜茶色、細かい縦の裂け目がある</td>
+</tr>
+<tr>
+<td>トゥム・メラ</td>
+<td>18</td>
+<td>高木、最大20m</td>
+<td>膝根、板根</td>
+<td>暗灰色〜茶色、目立つ皮目がある</td>
+</tr>
+<tr>
+<td>バカウ・リリン</td>
+<td>i</td>
+<td>低木または小高木、約7〜9m</td>
+<td>支柱根も膝根もない。根元が太く、根が編んだように見えることがある</td>
+<td>灰色〜赤褐色、なめらか、皮目がある</td>
+</tr>
+<tr>
+<td>クタパン</td>
+<td>ii</td>
+<td>高木、10〜25m、ときに35m</td>
+<td>板根が出ることが多い</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3>表B：葉</h3>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>名前</th>
+<th>つき方</th>
+<th>種類、形、大きさ</th>
+<th>先端</th>
+<th>縁</th>
+<th>裏面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アカシア</td>
+<td></td>
+<td>仮葉、鎌形、10〜20×1.2〜3cm、縦の脈3本</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>アピアピ・ブル</td>
+<td>対生</td>
+<td>単葉、卵形または楕円形、厚い、最大10×6cm</td>
+<td></td>
+<td></td>
+<td>密な粉状の毛</td>
+</tr>
+<tr>
+<td>ニレ・ブンガ</td>
+<td>らせん生</td>
+<td>羽状複葉。小葉は3.5〜12×2〜6cm</td>
+<td>丸い</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>トゥルントゥム・メラ</td>
+<td>らせん生、小枝の先のほうに房状</td>
+<td>単葉、倒卵形、やや厚く多肉質、2〜9×1〜2.5cm</td>
+<td>丸いか凹形（くぼむ）</td>
+<td>全縁（なめらか）</td>
+<td></td>
+</tr>
+<tr>
+<td>ガンビル・ラウト</td>
+<td>対生</td>
+<td>単葉、卵形または細い披針形、薄い、3.8〜8.8×1.8〜4.3cm</td>
+<td></td>
+<td></td>
+<td>腺点がある</td>
+</tr>
+<tr>
+<td>ブタブタ</td>
+<td>らせん生</td>
+<td>単葉、卵形〜しずく形、3.7〜11×1.5〜6cm</td>
+<td></td>
+<td>浅い鋸歯。葉身の付け根の両側に2〜4個の腺</td>
+<td></td>
+</tr>
+<tr>
+<td>トゥバ・ラウト</td>
+<td>互生</td>
+<td>羽状複葉、革質の小葉3〜7枚、先端の小葉が少し大きい</td>
+<td>さまざま</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ブバル</td>
+<td>らせん生</td>
+<td>単葉、心形、葉身5〜30cm</td>
+<td>とがる</td>
+<td>細かい鋸歯</td>
+<td>白っぽく、星状毛がある</td>
+</tr>
+<tr>
+<td>アピアピ・プティ</td>
+<td>対生</td>
+<td>単葉、長楕円形〜披針形、最大15×5cm</td>
+<td>とがる</td>
+<td></td>
+<td>白っぽい</td>
+</tr>
+<tr>
+<td>バカウ・クラップ</td>
+<td>対生（十字対生）</td>
+<td>単葉、幅広い楕円形、革質、11〜23cm</td>
+<td>短く硬い突起、折れていることが多い</td>
+<td>全縁（なめらか）</td>
+<td>小さな黒いコルク斑点</td>
+</tr>
+<tr>
+<td>トゥンガル・メラ</td>
+<td>対生（十字対生）</td>
+<td>単葉、卵形〜卵状楕円形、5.5〜11×3〜7.5cm。葉柄1〜2.5cm</td>
+<td>鈍い</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ブルス</td>
+<td>対生（十字対生）</td>
+<td>単葉、楕円形、薄く肉厚で革質、6〜17×2〜8cm</td>
+<td>とがる</td>
+<td></td>
+<td>淡い緑色</td>
+</tr>
+<tr>
+<td>ニパ</td>
+<td>根茎から立ち上がる</td>
+<td>羽状の葉、4〜10m。小葉は60〜130×5〜8cm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>バカウ・ミニャッ</td>
+<td>対生（十字対生）</td>
+<td>単葉、楕円形、革質、7〜19×3.5〜8cm</td>
+<td>短く硬い突起</td>
+<td>全縁</td>
+<td>小さな黒いコルク斑点</td>
+</tr>
+<tr>
+<td>ドゥングン・ラウト</td>
+<td>らせん生</td>
+<td>単葉、長楕円形、6.3〜30×3.8〜15cm</td>
+<td></td>
+<td>全縁またはわずかに波打つ</td>
+<td>うろこ状、銀白色〜茶色</td>
+</tr>
+<tr>
+<td>パンダン・ラウト</td>
+<td>らせん生、枝先に集まる</td>
+<td>単葉、帯状、80〜180×4〜8cm、平行脈</td>
+<td></td>
+<td>とげがある</td>
+<td>主脈の裏にとげ</td>
+</tr>
+<tr>
+<td>プルパット</td>
+<td>対生</td>
+<td>単葉、楕円形〜卵形または倒卵形、5〜11×4〜8cm</td>
+<td>丸いか幅広い</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>トゥム・メラ</td>
+<td>対生（十字対生）</td>
+<td>単葉、薄く肉厚で革質、9〜24×4〜9cm</td>
+<td>とがる</td>
+<td></td>
+<td>淡い緑色</td>
+</tr>
+<tr>
+<td>バカウ・リリン</td>
+<td>対生（十字対生）</td>
+<td>単葉、楕円状長楕円形、6〜13×2.5〜6cm。葉柄1〜1.5cm</td>
+<td></td>
+<td>内側に巻く</td>
+<td></td>
+</tr>
+<tr>
+<td>クタパン</td>
+<td>枝先に集まる</td>
+<td>単葉、倒卵形、光沢がある、15〜25×8〜15cm（最大38×24cm）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>例：</strong> 対生の葉と膝根をもつ木を見つけたが、散布体はない。表Bで対生の葉をもつ植物は10種に絞られ、表Aでブルスとトゥム・メラに絞られる。そこで散布体を探す（<a href="#check-your-answer">答えを確かめる</a>を参照）。</p></div></details>
+<section class="block" id="check-your-answer"><h2>答えを確かめる</h2><p>名前がわかったら、次のどれかで確かめます。果実や散布体は季節によりますが、古いものが木の下の地面に落ちていることがよくあります。</p>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>名前</th>
+<th>確かめる特徴</th>
+<th>まちがえやすい植物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アカシア</td>
+<td>平たいさや、強く曲がってゆるいコイル状になり、長さ3.2〜16cm（<a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>）</td>
+<td><em>Acacia mangium</em>（このリストにはない）：仮葉は幅最大9.5cm（<a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf">WATTLE</a>）</td>
+</tr>
+<tr>
+<td>アピアピ・ブル</td>
+<td>幅広い卵形の果実、長さ約18mm以下、綿毛が密に生える（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>）</td>
+<td>アピアピ・プティ</td>
+</tr>
+<tr>
+<td>アピアピ・プティ</td>
+<td>目立つくちばしのある卵形の果実、最大4cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>）</td>
+<td>アピアピ・ブル</td>
+</tr>
+<tr>
+<td>バカウ・クラップ</td>
+<td>ぶら下がっている散布体の襟が淡い緑色か、緑がかった黄色（<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>）</td>
+<td>バカウ・ミニャッ</td>
+</tr>
+<tr>
+<td>バカウ・リリン</td>
+<td>緑色でなめらかな棍棒形の散布体、15〜40cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>）</td>
+<td>バカウ・ミニャッも似た散布体をつけるが、支柱根の上に立つ</td>
+</tr>
+<tr>
+<td>バカウ・ミニャッ</td>
+<td>ぶら下がっている散布体の襟が赤か、赤みを帯びる（<a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>）</td>
+<td>バカウ・クラップ、バカウ・リリン</td>
+</tr>
+<tr>
+<td>ブバル</td>
+<td>丸いさく果、熟すと茶色になり、5つに裂ける（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>ブルス</td>
+<td>細い円柱形の散布体、長さ8〜15cm、幅0.8cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>）</td>
+<td>トゥム・メラ、トゥンガル・メラ</td>
+</tr>
+<tr>
+<td>ブタブタ</td>
+<td>小さく丸い、3つに分かれたさく果、直径約8〜9mm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>）。（白い乳液が典型的な目印だが、試さないこと）</td>
+<td>クタパン（どちらも葉が赤くなる（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>; <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3181">NParks</a>)）</td>
+</tr>
+<tr>
+<td>ドゥングン・ラウト</td>
+<td>木質で光沢のある果実、3.8〜8cm、片側に竜骨（キール）がある（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>ガンビル・ラウト</td>
+<td>しずく形の果実、約0.8cm、緑色から黒色または茶色になる（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>クタパン</td>
+<td>やや平たい果実、3.5〜7cm、竜骨状の稜があり、緑色から黄色か赤に熟す（<a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>）</td>
+<td>ブタブタ</td>
+</tr>
+<tr>
+<td>ニパ</td>
+<td>大きな果実、長さ8〜11cm、幅6〜8cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>ニレ・ブンガ</td>
+<td>グレープフルーツ〜小ぶりのザボンほどの木質の果実（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>パンダン・ラウト</td>
+<td>パイナップルに似た果実、長さ8〜30cm、緑色からオレンジ色に熟す（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>）</td>
+<td>料理用のパンダン（<em>P. amaryllifolius</em>、このリストにはない）。パンダン・ラウトの項を参照</td>
+</tr>
+<tr>
+<td>プルパット</td>
+<td>丸く平たい果実、直径2〜4.5cm、根元に萼が残る（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>）</td>
+<td>ブルンバン（<em>S. caseolaris</em>、このリストにはない）。プルパットの項を参照</td>
+</tr>
+<tr>
+<td>トゥンガル・メラ</td>
+<td>角ばった稜があり、しだいに太くなって先が鋭くとがる散布体、8〜17cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>）</td>
+<td>ブルス</td>
+</tr>
+<tr>
+<td>トゥルントゥム・メラ</td>
+<td>花瓶形で赤みを帯びた果実、長さ1〜2cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>）</td>
+<td>トゥルントゥム・プティ（<em>L. racemosa</em>、このリストにはない）。トゥルントゥム・メラの項を参照</td>
+</tr>
+<tr>
+<td>トゥバ・ラウト</td>
+<td>平たい円盤形または卵形のさや、3〜5.5cm（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>）</td>
+<td>トレイルにはない</td>
+</tr>
+<tr>
+<td>トゥム・メラ</td>
+<td>葉巻形の散布体、長さ19〜25cm、幅1〜1.7cm、緑色から暗紫色になる（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>）</td>
+<td>ブルス</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>散布体の手ざわり：</strong> 指で転がしてみましょう。トゥンガル・メラには <strong>角ばった稜</strong> があり（<em>bersegi</em>）（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>）、ブルスは <strong>細くて丸く</strong>（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>）、トゥム・メラは <strong>葉巻のように太い</strong>（<a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>）。</p></section>
+<section class="block" id="limits-of-this-guide"><h2>この手引きの限界</h2><ul>
+<li><strong>この20種しか扱っていません。</strong> リストにない植物（たとえば <em>Acacia mangium</em>、トゥルントゥム・プティ、ブルンバン、<em>Thespesia populnea</em>）でも、どれかの名前にたどり着いてしまうので、誤同定のおそれがあります。「答えを確かめる」のどれにも合わなければ、別の種かもしれません。</li>
+<li><strong>季節に左右される対句：</strong> 対句13と15には散布体が必要です。</li>
+<li><strong>若い木：</strong> 対句8〜14は根を使います。若い木には、支柱根や膝根がまだないことがあります。</li>
+<li><strong>葉の大きさ</strong> は典型的な範囲で、厳密な限界ではありません。葉は何枚も見ましょう。</li>
+</ul></section>
+<details class="fold" id="glossary"><summary><h2>用語集</h2><span class="hint" data-open="タップして開く" data-close="タップして閉じる"></span></summary><div class="fold-body"><div class="tscroll"><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>やさしい意味</th>
+<th>マレー語（ecoCare で使うもの）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>互生</td>
+<td>小枝の1か所に1枚ずつ、交互にのぼってつく葉</td>
+<td></td>
+</tr>
+<tr>
+<td>小突起状（apiculate）</td>
+<td>小さく短い突起で終わる</td>
+<td></td>
+</tr>
+<tr>
+<td>芽</td>
+<td>まだ伸びていない小さな新芽。1枚の葉には葉柄の付け根にあるが、小葉にはない</td>
+<td>tunas</td>
+</tr>
+<tr>
+<td>板根</td>
+<td>木を支える、幹の根元の広がった翼のような部分</td>
+<td>akar banir</td>
+</tr>
+<tr>
+<td>萼</td>
+<td>花の外側の輪（がく片）。多くのマングローブでは果実や散布体に残る</td>
+<td></td>
+</tr>
+<tr>
+<td>襟（カラー）</td>
+<td><em>Rhizophora</em> の散布体の上端にある短い筒。散布体が果実から出てくるところ</td>
+<td></td>
+</tr>
+<tr>
+<td>心形</td>
+<td>ハート形で、葉柄のつくところにくぼみがある</td>
+<td>bentuk hati</td>
+</tr>
+<tr>
+<td>コルク斑点</td>
+<td><em>Rhizophora</em> の葉の裏にある小さな黒い点</td>
+<td>bintik hitam</td>
+</tr>
+<tr>
+<td>十字対生</td>
+<td>対生の葉の各対が、次の対と直角になるつき方</td>
+<td></td>
+</tr>
+<tr>
+<td>楕円形</td>
+<td>真ん中がいちばん幅広い長円</td>
+<td></td>
+</tr>
+<tr>
+<td>全縁</td>
+<td>鋸歯や切れ込みのない、なめらかな葉の縁</td>
+<td></td>
+</tr>
+<tr>
+<td>鎌形</td>
+<td>鎌のように湾曲した形</td>
+<td></td>
+</tr>
+<tr>
+<td>腺</td>
+<td>ある物質を出す小さなふくらみ</td>
+<td></td>
+</tr>
+<tr>
+<td>葉柄間托葉</td>
+<td>対生の2本の葉柄の間にある、とがったさや。早く落ちて輪状の痕を残す</td>
+<td></td>
+</tr>
+<tr>
+<td>膝根</td>
+<td>泥から輪のように出てまた泥に戻る、曲げた膝のような根</td>
+<td>akar lutut</td>
+</tr>
+<tr>
+<td>披針形</td>
+<td>槍の穂先のように、細長く先に向かって細くなる形</td>
+<td></td>
+</tr>
+<tr>
+<td>小葉</td>
+<td>羽状複葉をつくる小さな葉身の一つ。付け根に芽がない</td>
+<td>anak daun</td>
+</tr>
+<tr>
+<td>皮目</td>
+<td>樹皮や根にある、空気を通す小さく盛り上がった穴</td>
+<td></td>
+</tr>
+<tr>
+<td>主脈</td>
+<td>葉の中央を走る太い葉脈</td>
+<td></td>
+</tr>
+<tr>
+<td>微突起</td>
+<td>葉の先にある短く鋭い突起</td>
+<td></td>
+</tr>
+<tr>
+<td>微突形（mucronate）</td>
+<td>短く硬い突起で終わる</td>
+<td></td>
+</tr>
+<tr>
+<td>倒卵形</td>
+<td>先のほうがいちばん幅広い卵形</td>
+<td></td>
+</tr>
+<tr>
+<td>対生</td>
+<td>小枝の同じ位置に2枚ずつ向かい合ってつく葉</td>
+<td>berpasangan</td>
+</tr>
+<tr>
+<td>卵形</td>
+<td>付け根のほうがいちばん幅広い卵形</td>
+<td></td>
+</tr>
+<tr>
+<td>平行脈</td>
+<td>付け根から先まで並んで走る葉脈</td>
+<td></td>
+</tr>
+<tr>
+<td>葉柄</td>
+<td>葉の柄</td>
+<td>tangkai daun</td>
+</tr>
+<tr>
+<td>仮葉</td>
+<td>葉のように見えて葉の働きをする、扁平になった葉柄</td>
+<td></td>
+</tr>
+<tr>
+<td>羽状複葉</td>
+<td>鳥の羽のように、中軸に沿って並ぶ何枚もの小葉でできた1枚の葉</td>
+<td>daun majmuk</td>
+</tr>
+<tr>
+<td>板状の板根</td>
+<td>地面をくねって伸びる、板のように平たい根</td>
+<td></td>
+</tr>
+<tr>
+<td>呼吸根</td>
+<td>泥から上に伸びる、呼吸のための根</td>
+<td>akar pensel（細いもの）</td>
+</tr>
+<tr>
+<td>気根（prop roots）</td>
+<td>枝から地面に向かって垂れ下がる根。大きなバカウ・ミニャッの長く垂れた根など。資料によっては支柱根もゆるく「prop root」と呼ぶ</td>
+<td></td>
+</tr>
+<tr>
+<td>散布体</td>
+<td>親木についたまま成長を始めた芽生え（胎生のマングローブ）</td>
+<td>anak benih、「buah」</td>
+</tr>
+<tr>
+<td>凹形（retuse）</td>
+<td>先が丸く、浅くくぼむ形</td>
+<td></td>
+</tr>
+<tr>
+<td>根茎</td>
+<td>地中や泥の中を水平に伸びる茎</td>
+<td>rizom</td>
+</tr>
+<tr>
+<td>輪状の痕</td>
+<td>托葉が落ちた跡に小枝に残る輪の形の痕</td>
+<td></td>
+</tr>
+<tr>
+<td>塩腺</td>
+<td>余分な塩を外に出す、葉にある小さな腺</td>
+<td></td>
+</tr>
+<tr>
+<td>単葉</td>
+<td>分かれていない1枚の葉身をもつ葉</td>
+<td>daun tunggal</td>
+</tr>
+<tr>
+<td>星状毛</td>
+<td>小さな星形の毛</td>
+<td></td>
+</tr>
+<tr>
+<td>支柱根</td>
+<td>幹の下部から泥の中へアーチ状に伸びる、クモの脚のような根（<em>Rhizophora</em>、トゥンガル・メラ、パンダン・ラウト）</td>
+<td>akar jangkang</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<details class="fold" id="sources-by-plant"><summary><h2>植物ごとの出典</h2><span class="hint" data-open="タップして開く" data-close="タップして閉じる"></span></summary><div class="fold-body"><ul>
+<li><strong>アカシア：</strong> <a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm">WATTLE</a>。<em>A. mangium</em> との比較は <a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf">WATTLE</a>。</li>
+<li><strong>アピアピ・ブル：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/5/3589">NParks</a>。</li>
+<li><strong>アピアピ・プティ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3263">NParks</a>。</li>
+<li><strong>バカウ・クラップ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/6/4639">NParks</a>。樹皮は <a href="https://prosea.prota4u.org/view.aspx?id=3038">PROSEA</a>。散布体の襟、葉先、コルク斑点は <a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>。折れた葉先は <a href="https://minerva.union.edu/gillikid/mangrove_14May2020/r_mucronata.htm">Gillikin &amp; Verheyden</a>。</li>
+<li><strong>バカウ・リリン：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6540">NParks</a>、<a href="https://uses.plantnet-project.org/en/Kandelia_candel_(PROSEA)">PROSEA</a>。</li>
+<li><strong>バカウ・ミニャッ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3265">NParks</a>、<a href="https://prosea.prota4u.org/view.aspx?id=3038">PROSEA</a>。散布体の襟、葉先、コルク斑点は <a href="https://doi.org/10.7717/peerj.17460">Ngernsaengsaruay ら 2024</a>。</li>
+<li><strong>ブバル：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2954">NParks</a>、<a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm">Plants of South Eastern New South Wales</a>。</li>
+<li><strong>ブルス：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3264">NParks</a>。</li>
+<li><strong>ブタブタ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/8/2893">NParks</a>。乳液の毒性は <a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html">Atlas of Poisonous Plants in Hong Kong</a>。</li>
+<li><strong>ドゥングン・ラウト：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/9/2952">NParks</a>。</li>
+<li><strong>ガンビル・ラウト：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/1/8/1823">NParks</a>、<a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm">CSIRO, Australian Tropical Rainforest Plants</a>。</li>
+<li><strong>クタパン：</strong> <a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)">PROSEA</a>。葉の色は <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3181">NParks</a>。</li>
+<li><strong>ニパ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/2/6/2658">NParks</a>。</li>
+<li><strong>ニレ・ブンガ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/8/4836">NParks</a>。葉のつき方は <a href="https://prosea.prota4u.org/view.aspx?id=6490">PROSEA</a>。</li>
+<li><strong>パンダン・ラウト：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/2/5242">NParks</a>。</li>
+<li><strong>プルパット：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/4/7/4739">NParks</a>。</li>
+<li><strong>トゥンガル・メラ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/6/5/6541">NParks</a>。</li>
+<li><strong>トゥルントゥム・メラ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3266">NParks</a>。葉のつき方は <a href="https://prosea.prota4u.org/view.aspx?id=5744">PROSEA</a>。</li>
+<li><strong>トゥバ・ラウト：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/5/8/5882">NParks</a>。</li>
+<li><strong>トゥム・メラ：</strong> <a href="https://www.nparks.gov.sg/florafaunaweb/flora/3/2/3260">NParks</a>。</li>
+<li><strong>ヒルギ科</strong>（十字対生、葉柄間托葉、輪状の痕）：<a href="https://repository.naturalis.nl/pub/532504">Hou 1958</a>。</li>
+</ul></div></details>
+<details class="fold" id="sources"><summary><h2>出典</h2><span class="hint" data-open="タップして開く" data-close="タップして閉じる"></span></summary><div class="fold-body"><ul>
+<li>Hou, D. (1958). Rhizophoraceae. <em>Flora Malesiana</em>, ser. I, vol. 5. <a href="https://repository.naturalis.nl/pub/532504">Naturalis repository</a></li>
+<li>NParks Flora &amp; Fauna Web, National Parks Board, Singapore：上にリンクした各種のページ。</li>
+<li>Gillikin, D. &amp; Verheyden, A. <em>A field guide to Kenyan mangroves</em>: <a href="https://minerva.union.edu/gillikid/mangrove_14May2020/r_mucronata.htm"><em>Rhizophora mucronata</em></a>.</li>
+<li>Hospital Authority, Hong Kong. <em>Atlas of Poisonous Plants in Hong Kong</em>: <a href="https://www3.ha.org.hk/toxicplant/en/excoecaria_agallocha.html"><em>Excoecaria agallocha</em></a>.</li>
+<li>Ngernsaengsaruay, C., Chanton, P., Leksungnoen, N., Uthairatsamee, S. &amp; Mianmit, N. (2024). A taxonomic revision of <em>Rhizophora</em> L. (Rhizophoraceae) in Thailand. <em>PeerJ</em> 12: e17460. <a href="https://doi.org/10.7717/peerj.17460">DOI</a></li>
+<li>PROSEA (Plant Resources of South-East Asia): <a href="https://prosea.prota4u.org/view.aspx?id=3038"><em>Rhizophora apiculata</em></a>, <a href="https://uses.plantnet-project.org/en/Kandelia_candel_(PROSEA)"><em>Kandelia candel</em></a>, <a href="https://uses.plantnet-project.org/en/Terminalia_catappa_(PROSEA)"><em>Terminalia catappa</em></a>, <a href="https://prosea.prota4u.org/view.aspx?id=5744"><em>Lumnitzera</em></a>, <a href="https://prosea.prota4u.org/view.aspx?id=6490"><em>Xylocarpus</em></a>.</li>
+<li>WATTLE: Acacias of Australia (Lucid key): <a href="https://keys.lucidcentral.com/wattle/text/entities/acacia_auriculiformis.htm"><em>Acacia auriculiformis</em></a>, <a href="https://keys.lucidcentral.com/wattle/pdf/entities/acacia_mangium.pdf"><em>Acacia mangium</em></a>.</li>
+<li>CSIRO (2020). <em>Australian Tropical Rainforest Plants</em>, online edition: <a href="https://apps.lucidcentral.org/rainforest/text/entities/clerodendrum_inerme.htm"><em>Clerodendrum inerme</em></a>.</li>
+<li><em>Plants of South Eastern New South Wales</em> (Lucid): <a href="https://apps.lucidcentral.org/plants_se_nsw/text/entities/hibiscus_tiliaceus.htm"><em>Hibiscus tiliaceus</em></a>.</li>
+</ul></div></details>
+</div>
+</template>
+<button class="lang-toggle" id="lang-toggle" type="button" lang="ja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lt-label">日本語</span></button>
+<a class="key-fab" id="key-fab" href="index.html#en" aria-label="Back to the tree notes">← <span class="kf-label">Tree notes</span></a>
+<script>
+
+(function () {
+  var LKEY = "mgt-lang", UI = {"en": {"title": "ecoCare Mangrove Trail: Key to the 20 Plants", "back": "Tree notes", "backLabel": "Back to the tree notes", "name": "English"}, "ja": {"title": "ecoCare マングローブ・トレイル：20種の検索表", "back": "樹木ノート", "backLabel": "樹木ノートに戻る", "name": "日本語"}};
+  var root = document.documentElement, holder = document.getElementById('key-root');
+  var tpl = document.getElementById('key-ja'), toggle = document.getElementById('lang-toggle'), fab = document.getElementById('key-fab');
+  var wraps = { en: holder.querySelector('.wrap'), ja: null }, cur = 'en';
+  function wrapOf(lang) {
+    if (!wraps[lang]) wraps[lang] = document.importNode(tpl.content, true).querySelector('.wrap');
+    return wraps[lang];
+  }
+  function openFor(id) {
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var d = el.closest('details');
+    if (d && !d.open) d.open = true;
+  }
+  function setLang(lang) {
+    lang = lang === 'ja' ? 'ja' : 'en';
+    if (lang !== cur) {
+      var openIds = Array.prototype.map.call(wraps[cur].querySelectorAll('details[open]'), function (d) { return d.id; });
+      var y = window.scrollY, h = Math.max(1, document.documentElement.scrollHeight);
+      holder.replaceChild(wrapOf(lang), wraps[cur]);
+      cur = lang;
+      openIds.forEach(openFor);
+      window.scrollTo(0, y / h * document.documentElement.scrollHeight);
+    }
+    root.lang = cur;
+    document.title = UI[cur].title;
+    fab.href = 'index.html#' + cur;
+    fab.querySelector('.kf-label').textContent = UI[cur].back;
+    fab.setAttribute('aria-label', UI[cur].backLabel);
+    toggle.lang = cur === 'en' ? 'ja' : 'en';
+    toggle.querySelector('.lt-label').textContent = UI[cur === 'en' ? 'ja' : 'en'].name;
+  }
+  toggle.addEventListener('click', function () {
+    setLang(cur === 'en' ? 'ja' : 'en');
+    try { localStorage.setItem(LKEY, cur); } catch (e) {}
+  });
+  // Links into a folded section open it first.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a) openFor(a.getAttribute('href').slice(1));
+  });
+  window.addEventListener('hashchange', function () { openFor(location.hash.slice(1)); });
+  var saved = null;
+  try { saved = localStorage.getItem(LKEY); } catch (e) {}
+  var asked = location.hash.slice(1);
+  if (asked === 'ja' || asked === 'en') {
+    saved = asked;
+    try { localStorage.setItem(LKEY, asked); } catch (e) {}
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+  }
+  try { setLang(saved); } finally { root.removeAttribute('data-mgt-pending'); }
+  if (location.hash.length > 1) {
+    openFor(location.hash.slice(1));
+    var t = document.getElementById(location.hash.slice(1));
+    if (t) setTimeout(function () { t.scrollIntoView(); }, 60);
+  }
+})();
+</script>
+</body>
+</html>
